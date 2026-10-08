@@ -1,0 +1,38 @@
+{
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+  "files": {
+    "apply_bps.py": {
+      "bytes": 3402,
+      "sha256": "cab05915a9f896353f90881d4804ec9b0c78d6360693090c57a27abfe0b53eb4"
+    },
+    "DELIVERY-STATUS.json": {
+      "bytes": 8818,
+      "sha256": "bfd1338f779e1ede699833009f8cdc333814987e5c5266973d3f88cdfb57223b"
+    },
+    "FONT-NOTICES.md": {
+      "bytes": 624,
+      "sha256": "3cf52ea2bd4b802c153793607e190ce544ee0eea3be2f30602b05d43be758158"
+    },
+    "genki-slime-cn-v22.bps": {
+      "bytes": 8403161,
+      "sha256": "4c1174fcb35a396838302cacd66c9704f6af6d098a885c1c243d4200987de8db"
+    },
+    "KNOWN-ISSUES.md": {
+      "bytes": 720,
+      "sha256": "581c7fcc31ab0614e86ac1d4c1e365caa1de8a816d5d908b25694c3b624d7b82"
+    },
+    "OFL-Unifont.txt": {
+      "bytes": 4340,
+      "sha256": "869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded"
+    },
+    "OFL.txt": {
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    "README.md": {
+      "bytes": 2165,
+      "sha256": "dc08b3cf09c97f7059f35de9bafec1572a6208fb5a9772b721e6715c164b96c2"
+    }
+  }
+}

@@ -13,3 +13,6 @@
 - Run ROM-free tests and public-tree audit. Optional source/native checks require the owner's ROM locally, never in CI secrets.
 - Separate static, controlled-fixture and natural-input evidence; do not claim full playthrough/save compatibility.
 - Upstream is a pinned fetched dependency, not vendored. Preserve font notices and avoid a blanket font license for the repo.
+
+- v22 graphic profile is independent; immutable root v20 BPS/apply script/Release remain protected. Read docs/graphics-v22.md before resuming graphics work.
+- Ranking135 means beginner; ranking137 unit is seconds, not number of creatures. Preserve coin x192 / seconds x184, y112+16n unit cells and rescue frame borders. Indexed-mask equality alone is not palette-boundary RGB equality.

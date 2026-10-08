@@ -18,9 +18,9 @@
 | 居民小名单 | renderer hook `0x96FE8`，三个 redraw caller | `gba_resident_scroll12`，LR+string-pointer 限定，非 generic 存档渲染 |
 | 居民 阅读／尚未交谈 OBJ | archive 及 loader 见 `gba_resident_obj_labels` | native16，v20已包含，原图边框／背板独立 |
 | 居民三状态卡 | `gba_resident_status_cards.CARDS` 与 card profiles | 状态特定 native16 scatter/hook，v20已包含 |
-| 标题 Logo／动画 | IDs `2BD` tiles／`2BE` 31 templates／`2BF` palette | **未汉化**；`research/title-parent-source-census.json` |
-| 救出菜单 | tiles `0x790FB4`、palette `0x7930E4`，IDs `16D/16E/170/171` | 已定位，当前公开流水线没有对应中文资产模块 |
-| 排名／小游戏 | tiles `0x78D810`、palette `0x790278`，IDs `134/136/139/13A` | 已定位，消费者 `0xC2392…C23F0`／`0xC256A…C2584`；未完整汉化 |
+| 标题 Logo／动画 | IDs `2BD` tiles／`2BE` 31 templates／`2BF` palette | v22 `gba_title_graphics_v22`；包含完整组合帧6和等待按键路径，见`graphics-v22.md` |
+| 救出菜单 | tiles `0x790FB4`、palette `0x7930E4`，IDs `16D/16E/170/171` | v22 `gba_rescue_menu_v22`，保留动态计数 |
+| 排名／小游戏 | tiles `0x78D810`、palette `0x790278`，IDs `134/136/139/13A` | 已定位，消费者 `0xC2392…C23F0`／`0xC256A…C2584`；v22 `gba_ranking_minigames_v22` 七图配对 |
 | HUD／地图／其余小游戏 | 不属于上述小范围 preview census 的全部资源 | **未完整普查**；不能因 archive 有737 entries 就说737项全部处理 |
 
 ## 自己抽取，不下载／提交原图
@@ -38,7 +38,7 @@ python -X utf8 tools/inspect_graphics.py --rom "local-input/source.gba" --ids 21
 - `2BE` 有31模板，不是稳定帧一张图片。原日文字形 union 共186 tiles，范围 `121…134`、`150…217`、`321…424`。
 - `321…404` 是蓝字变形，`405…424` 是另一组动画字；不能把它们当无关艺术而漏掉。
 - 两条标题加载路径都需追踪：`0xD3BB4/0xD3BB8` 与 `0xD4484/0xD4488`。
-- Raw模板 palette bank 与 live context palette 不同，必须核对 emitter 及 tile/palette base。
+- 不能预设palette base偏移；本标题raw模板bank2/3/1与本轮live OAM相同，原先猜测“palette不同”已纠正。其他系统仍须单独核对。
 - 英文 DRAGON QUEST、角色脸、闪光应保留；不要只翻最后定格帧而把动画中间帧留日文。
 
 ## 完成新图形模块的最低门槛

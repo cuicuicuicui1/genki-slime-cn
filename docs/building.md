@@ -82,3 +82,7 @@ python -X utf8 tools/project.py build --rom "local-input/source.gba" --profile u
 - 修改仓库默认译文后想构建：把改稿作为 `--translations` 传入；无该参数的 v20 重建有最终固定 SHA 门。
 
 ROM、存档、BIOS、解压资源和完整原文仅保存在本地忽略目录。不在 CI 中提供 ROM secret，也不下载商业 ROM。
+
+## v22 图形补全
+
+使用 `--profile v22`。默认v20入口保持固定复现。新模块与破解入口见 [graphics-v22.md](graphics-v22.md)。构建依然必须自备严格SHA的原版，不读取历史ROM。

@@ -1,0 +1,329 @@
+{
+  "status": "pass",
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+  "patch_sha256": "4c1174fcb35a396838302cacd66c9704f6af6d098a885c1c243d4200987de8db",
+  "zip_sha256": "cb50156559f008dac3ac7f5b01380b5934981b644eb5526e79f1be575de16c51",
+  "ZIP_contains_ROM_or_save": false,
+  "zip_Python_isolated_replay": true,
+  "Flips_replay": true,
+  "old_files_preserved": true,
+  "verification": {
+    "schema": "gba-v22-graphics-expansion-delivery",
+    "status": "local-verified-graphics-expansion",
+    "date_local": "2026-10-08",
+    "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+    "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+    "patch_sha256": "4c1174fcb35a396838302cacd66c9704f6af6d098a885c1c243d4200987de8db",
+    "source_bytes": 8388608,
+    "target_bytes": 16777216,
+    "full_game_localization_complete": false,
+    "all_graphical_Japanese_exhaustively_censused": false,
+    "full_playthrough_verified": false,
+    "cross_version_save_compatibility_verified": false,
+    "stable_primary_ID_count": 1878,
+    "title_frame_count": 31,
+    "pot_title_frame_count": 15,
+    "ranking_map_count": 7,
+    "ROM_free_tests": 39,
+    "natural_title": {
+      "name": "mGBA",
+      "version": "0.11-212-7a12d6d",
+      "core_sha256": "384bb3ff0b88ff8b1a322f152e1f5932afc13d1f43f62e45463c8267753dde9f",
+      "ROM_SHA": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+      "frames": 3000,
+      "inputs": "none",
+      "RAMwrites": false,
+      "save_loaded": false,
+      "scope": "fresh title movie+idle loops, HLE, not fullplaythrough"
+    },
+    "natural_early": {
+      "frames": 7000,
+      "ROM_SHA": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+      "memory_writes": false,
+      "inputs": "existing natural early route"
+    },
+    "native_graphics": {
+      "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+      "checks": [
+        {
+          "group": "title",
+          "id": 415,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 8192
+        },
+        {
+          "group": "title",
+          "id": 417,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "title",
+          "id": 701,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 14336
+        },
+        {
+          "group": "title",
+          "kind": "native-context-init-plus31-live-ROM-template-directory-readback",
+          "frame_count": 31,
+          "animation_anchor": 914
+        },
+        {
+          "group": "rescue",
+          "id": 361,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 32768
+        },
+        {
+          "group": "rescue",
+          "id": 365,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 832
+        },
+        {
+          "group": "rescue",
+          "id": 366,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "rescue",
+          "id": 368,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 832
+        },
+        {
+          "group": "rescue",
+          "id": 369,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 832
+        },
+        {
+          "group": "ranking",
+          "id": 306,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 32768
+        },
+        {
+          "group": "ranking",
+          "id": 308,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 4096
+        },
+        {
+          "group": "ranking",
+          "id": 309,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "ranking",
+          "id": 310,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "ranking",
+          "id": 311,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 4096
+        },
+        {
+          "group": "ranking",
+          "id": 312,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "ranking",
+          "id": 313,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 4096
+        },
+        {
+          "group": "ranking",
+          "id": 314,
+          "kind": "native-getter-decompressor-guard",
+          "bytes": 2048
+        },
+        {
+          "group": "pot",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 1941484,
+          "ID": 188
+        },
+        {
+          "group": "pot",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 1941484,
+          "ID": 190
+        },
+        {
+          "group": "pot",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 706
+        },
+        {
+          "group": "pot",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 707
+        },
+        {
+          "group": "wordmarks",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 710
+        },
+        {
+          "group": "wordmarks",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 712
+        },
+        {
+          "group": "wordmarks",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 718
+        },
+        {
+          "group": "wordmarks",
+          "kind": "native-source-qualified-archive-entry",
+          "archive": 7757736,
+          "ID": 727
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "chained previous native gateway paired atlas+map",
+          "source_request": "0x8756464",
+          "bytes": 768
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "chained previous native gateway paired atlas+map",
+          "source_request": "0x875651c",
+          "bytes": 768
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "chained previous native gateway paired atlas+map",
+          "source_request": "0x8756890",
+          "bytes": 1280
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "chained previous native gateway paired atlas+map",
+          "source_request": "0x8757788",
+          "bytes": 640
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x87565bc"
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x8756770"
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x8756a58"
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x8756c58"
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x8756e70"
+        },
+        {
+          "group": "extra_file_BG",
+          "kind": "retained old warning/sleep pair",
+          "source_request": "0x8757030"
+        },
+        {
+          "group": "rescue",
+          "kind": "actual BB95C..BB9D4 loader fragment",
+          "all_source_map_calls_executed": true
+        },
+        {
+          "group": "saved_names",
+          "kind": "8 exact file callers, CJK/bounds/VRAM halfword guard",
+          "count": 48
+        },
+        {
+          "group": "saved_names",
+          "kind": "legacy file/nonfile paired output",
+          "count": 10
+        },
+        {
+          "group": "saved_names",
+          "kind": "full original D7988 record compositor",
+          "slot": 0,
+          "VRAM": "0x6007680",
+          "fixture_name": "史拉林",
+          "u16_cells_unchanged": true
+        },
+        {
+          "group": "saved_names",
+          "kind": "full original D7988 record compositor",
+          "slot": 1,
+          "VRAM": "0x6007b40",
+          "fixture_name": "史拉林",
+          "u16_cells_unchanged": true
+        }
+      ],
+      "scope": "Actual target ARMv4T source consumers in controlled fragments; DMA copies modeled, not GBA timing or natural full gameplay",
+      "status": "pass"
+    },
+    "text_native": {
+      "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+      "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+      "scripts": [
+        {
+          "script": "audit_gba.py",
+          "exit_code": 0
+        },
+        {
+          "script": "test_engine.py",
+          "exit_code": 0
+        },
+        {
+          "script": "test_gba_name.py",
+          "exit_code": 0
+        }
+      ],
+      "scope": "exact author-token digests/readback/static write bounds + ARMv4T dialogue/plain/small/name consumers; controlled tests only, no natural playthrough"
+    },
+    "Python_isolated_replay": true,
+    "Flips_replay": true,
+    "negative_tests": {
+      "wrong-source": {
+        "rejected": true,
+        "output_preserved_or_not_created": true
+      },
+      "corrupt": {
+        "rejected": true,
+        "output_preserved_or_not_created": true
+      },
+      "truncated": {
+        "rejected": true,
+        "output_preserved_or_not_created": true
+      },
+      "no-overwrite": {
+        "rejected": true,
+        "output_preserved_or_not_created": true
+      }
+    },
+    "protected_original_v20_active_v15_preserved": true
+  }
+}

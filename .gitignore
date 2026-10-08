@@ -23,7 +23,18 @@ build/
 inputs/
 upstream/
 work/
-releases/
+/releases/*
+!/releases/v22/
+/releases/v22/*
+!/releases/v22/genki-slime-cn-v22.bps
+!/releases/v22/apply_bps.py
+!/releases/v22/README.md
+!/releases/v22/KNOWN-ISSUES.md
+!/releases/v22/CHECKSUMS.json
+!/releases/v22/DELIVERY-STATUS.json
+!/releases/v22/FONT-NOTICES.md
+!/releases/v22/OFL.txt
+!/releases/v22/OFL-Unifont.txt
 
 .venv/
 venv/

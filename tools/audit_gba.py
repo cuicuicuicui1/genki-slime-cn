@@ -21,7 +21,15 @@ for r in m['records']:
  if lookup[r['id']]['format']=='plain':
   compiled,profile=apply_plain_profile(lookup[r['id']],trans[r['id']]['tokens'],codec,source)
   normalized,_=codec.decode(codec.encode(compiled,'plain',compact=True),0,'plain')
-  assert actual==normalized,('plain author/compiler/native mismatch',r['id'])
+  if r['id']=='plain-713F08' and r['layout'].get('ui_candidate_padding'):
+   # This source consumer allocates 24+32px, rather than reading advances.
+   # Permit only the documented compiler padding, never arbitrary author drift.
+   assert normalized==['是',['ALIGN'],'否']
+   assert actual==['是　',['ALIGN'],'否　　',['ALIGN']] # native Latin-space token decodes as U+3000
+   pad=r['layout']['ui_candidate_padding'];assert pad['original_width_px']==56 and pad['original_columns_per_row']==[3,4]
+   assert target[r['offset']:end].hex()==pad['encoded_hex']
+   assert struct.unpack_from('<I',target,0x73840C)[0]==BASE+r['offset']
+  else:assert actual==normalized,('plain author/compiler/native mismatch',r['id'])
   assert r['layout'].get('fixed_window')==profile
  if lookup[r['id']]['format']=='small':
   compiled,profile=fit_resident_cells(lookup[r['id']],trans[r['id']]['tokens'],codec,source)

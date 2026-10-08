@@ -52,3 +52,7 @@ python -X utf8 tools/verify_native.py --rom "local-input/source.gba" --build "ou
 ```
 
 在新目录复制构建结果后，运行公开 `audit_gba.py`、`test_engine.py` 与 `test_gba_name.py`。核对原文／当前tokens／字体ID／写入区域／读回，以及ARMv4T字形／文本／起名消费者。保留每脚本exit code与具体report。它们是受控测试，不能代替自然路线；逐审稿digest测试不接受未经重审的译文，这不是开发构建不支持修改。
+
+## v22 图形补全验证
+
+新增39项ROM-free测试、标题31/砸壶15模板、三类排行榜/救援/文件配对图集和姓名消费者测试。具体同SHA结果见 [graphics-v22-delivery.json](../evidence/graphics-v22-delivery.json)。自然标题3000与早期7000帧没有读取用户存档；其他菜单/晚期小游戏运行片段为明确fixture，不标成自然全通关。旧v20表格是历史证据，v22不靠版本号自动继承。

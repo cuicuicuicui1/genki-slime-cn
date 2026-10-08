@@ -110,9 +110,9 @@ def compose(args):
  stage=args.stage.resolve();sys.path[:0]=[str(stage/'tools'),str(stage/'upstream/Translimeation/tools'),str(stage/'upstream/Translimeation/agent-tools')]
  source=read_source(args.rom.resolve());manifest=json.loads((stage/'build/manifest.json').read_text('utf-8'));rom=(stage/'build/slime-cn.gba').read_bytes()
  if args.profile!='text-only':rom,profiles,end=compose_assets(stage,source,rom,manifest);write_json(stage/'asset-profiles.json',profiles);manifest['appended_used']=end-0x800000
- if args.profile=='ui-candidate':
-  from gba_user_ui_v21 import build as ui
-  rom,meta=ui(source,rom,manifest);write_json(stage/'ui-candidate.json',meta)
+ if args.profile in ('ui-candidate','v22'):
+  from gba_user_ui_v21 import build as ui,APPEND_START
+  rom,meta=ui(source,rom,manifest,append_start=max(end,APPEND_START),input_contract=sha(rom));write_json(stage/'ui-candidate.json',meta)
   manifest['appended_used']=meta['append_end']-0x800000
   manifest['write_regions'].extend({'offset':r['offset'],'length':r['bytes'],'purpose':r['tag']} for r in meta['writes'])
   from cn_codec import CNCodec
@@ -121,6 +121,22 @@ def compose(args):
   record['offset']=meta['choice']['offset'];record['bytes']=len(bytes.fromhex(meta['choice']['encoded_hex']))
   record['tokens']=codec.decode(rom,record['offset'],'plain')[0]
   record['layout']['ui_candidate_padding']=meta['choice']
+ if args.profile=='v22':
+  from gba_title_graphics_v22 import extend as title
+  from gba_rescue_menu_v22 import extend as rescue
+  from gba_ranking_minigames_v22 import extend as ranking
+  from gba_pot_title_v22 import extend as pot
+  from gba_minigame_wordmarks_v22 import extend as wordmarks
+  from gba_file_extra_graphics_v22 import extend as file_extra
+  from gba_file_saved_name_v22 import extend as saved_names
+  ids=json.loads((stage/'build/font-map.json').read_text('utf-8'));end=meta['append_end'];graphics={}
+  for name,fn in [('title',title),('rescue',rescue),('ranking',ranking),('pot',pot),('wordmarks',wordmarks),('extra_file_BG',file_extra),('saved_names',saved_names)]:
+   if name=='extra_file_BG':rom,m=fn(source,rom,end,manifest)
+   elif name=='saved_names':rom,m=fn(source,rom,end,ids)
+   else:rom,m=fn(source,rom,end)
+   end=m['append_end'];graphics[name]=m
+   manifest['write_regions'].extend(m['writes'])
+  write_json(stage/'graphics-profiles.json',graphics);manifest['appended_used']=end-0x800000
  manifest['stage']='public-source-'+args.profile;manifest['target_sha256']=sha(rom)
  (stage/'slime-cn.gba').write_bytes(rom);write_json(stage/'manifest.json',manifest)
  print(sha(rom))
@@ -128,7 +144,7 @@ def main():
  parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
  sub.add_parser('bootstrap')
  e=sub.add_parser('extract');e.add_argument('--rom',type=Path,required=True);e.add_argument('--out',type=Path,required=True)
- b=sub.add_parser('build');b.add_argument('--rom',type=Path,required=True);b.add_argument('--out',type=Path,required=True);b.add_argument('--translations',type=Path);b.add_argument('--profile',choices=['v20','text-only','ui-candidate'],default='v20')
+ b=sub.add_parser('build');b.add_argument('--rom',type=Path,required=True);b.add_argument('--out',type=Path,required=True);b.add_argument('--translations',type=Path);b.add_argument('--profile',choices=['v20','text-only','ui-candidate','v22'],default='v20')
  c=sub.add_parser('_compose',help=argparse.SUPPRESS);c.add_argument('--stage',type=Path,required=True);c.add_argument('--rom',type=Path,required=True);c.add_argument('--profile',required=True)
  args=parser.parse_args()
  if args.command=='bootstrap':bootstrap()

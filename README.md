@@ -1,18 +1,32 @@
 # 元气史莱姆1：冲击的尾巴团 · 简体中文汉化工程
 
+## 新增：v22 图形补全版本
+
+标题Logo和31帧文字动画、砸壶15帧动画、文件命令/复制提示、救援结算、三类排行榜、开始/通关/选择/确认提示及文件卡中文姓名已加入独立v22流水线。旧v20补丁和Release保持不变。见 [本轮图形破解与构建](docs/graphics-v22.md)、[v22补丁目录](releases/v22) 和 [验证摘要](evidence/graphics-v22-delivery.json)。
+
+```sh
+python -X utf8 tools/project.py build --rom "自己的原版.gba" --out "outputs/v22" --profile v22
+```
+
+本轮验证：39项ROM-free测试、实际ARMv4T图形/文件卡消费者、正文/姓名原生检查、独立Python与Flips补丁回放，以及隔离mGBA的3000帧标题/7000帧新游戏路线。
+
+**边界：这不是100%汉化或全通关认证。** 已定位的本轮图形项目与仍未穷尽普查的晚期/联机场景分开记录。
+
+
 **Game Boy Advance / GBA · 日版 A9KJ · 公开的可复现开发工程**
 
 [![ROM-free CI](https://github.com/cuicuicuicui1/genki-slime-cn/actions/workflows/rom-free-tests.yml/badge.svg)](https://github.com/cuicuicuicui1/genki-slime-cn/actions/workflows/rom-free-tests.yml)
 
 这个仓库不只是补丁下载页：它保存中文译文、字形 ID、字体、补丁生成源码、图形资源处理器、逆向记录和贡献流程。你可以用自己合法持有的原版 ROM **原样重建 v20**，也可以改译文后生成新的开发版。
 
-> **状态说明**：已发布 v20 是“大部分汉化”交付版，不是全汉化／全通关认证版。标题与一些图形日文尚未完成。`ui-candidate` 是可复现的后续菜单修复实验，不能当正式版。项目只涉及 **GBA 一代**，不是 GBC，也不是 NDS 二代。
+> **状态说明**：已发布 v20 是“大部分汉化”交付版，不是全汉化／全通关认证版。该描述仅针对固定旧v20；新增图形补全版本见上方v22章节。`ui-candidate` 是可复现的后续菜单修复实验，不能当正式版。项目只涉及 **GBA 一代**，不是 GBC，也不是 NDS 二代。
 
 ## 按你的目的选择入口
 
 | 你想做什么 | 从哪里开始 |
 |---|---|
-| 直接使用现有汉化 | [v20 Release](https://github.com/cuicuicuicui1/genki-slime-cn/releases/tag/v20) / [补丁使用](#只想玩现有-v20) |
+| 使用本轮图形补全 | [v22补丁](releases/v22) / [本轮使用与破解](docs/graphics-v22.md) |
+| 使用旧v20固定版 | [v20 Release](https://github.com/cuicuicuicui1/genki-slime-cn/releases/tag/v20) / [补丁使用](#只想玩现有-v20) |
 | 从源码重建 v20 | [构建指南](docs/building.md) |
 | 精修译文／换成其他语言 | [译文编辑指南](docs/translation-format.md) |
 | 理解字库、字码、窗口、指针破解 | [文本与引擎逆向](docs/reverse-engineering.md) |
@@ -109,3 +123,7 @@ python apply_bps.py "原日版.gba" genki-slime-cn.bps "元气史莱姆1-简中-
 参考 SuperDisk／Translimeation，固定上游提交 `027ba3d7810cec3d5d634cb27402b32bf1a0e6d7`。未确认其根许可，因此上游源码不再分发，仅由 `bootstrap` 拉取。字体来自 GNU Unifont 16.0.03 与 Fusion Pixel；保留字体署名及许可。字体许可不覆盖游戏、译文或整个工程。详见 [权利与来源](COPYING.md)。
 
 维护状态更新：2026-10-08。新图形汉化正在开发，本次工程整理不把未完成部分伪装为完成。
+
+## 固定版与当前图形版不要混用
+
+仓库根目录 `genki-slime-cn.bps`、`apply_bps.py`、`DELIVERY-STATUS.json`、`VERIFICATION-SUMMARY.json`仍属于历史v20。v22的补丁、独立应用器、校验和与边界说明放在 `releases/v22/`。使用同一目录下的一套文件，不要拿v20应用器验证v22补丁。

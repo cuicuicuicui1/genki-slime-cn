@@ -1,0 +1,21 @@
+{
+  "schema": "gba-release-versions-v1",
+  "latest_graphics_version": "v22",
+  "default_rebuild_profile": "v20",
+  "root_artifacts_version": "v20",
+  "versions": {
+    "v20": {
+      "root_BPS_immutable": true,
+      "target_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+      "profile": "v20"
+    },
+    "v22": {
+      "directory": "releases/v22",
+      "profile": "v22",
+      "target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+      "patch_sha256": "4c1174fcb35a396838302cacd66c9704f6af6d098a885c1c243d4200987de8db",
+      "full_game_localization_complete": false,
+      "full_playthrough_verified": false
+    }
+  }
+}

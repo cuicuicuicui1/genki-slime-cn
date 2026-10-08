@@ -150,12 +150,16 @@ def repair_file_BG(source,base,rom,writes,manifest):
  return {'root_cause':'Old static-only spare census reused numeric atlas tiles3EC..3FF which stockD7930 generates dynamically. Restored all20 time digit tiles in all7paired atlas variants; original bug was reproducible on fresh local file, not user save corruption.', 'restored_dynamic_time_tiles':list(range(0x3EC,0x400)),'relocated_empty_record_tiles':{str(k):v for k,v in relocate.items()},'exclusive_blank_variants_census':safe,'both_blank_variants_localized':True,'stat_units':{ch:{'tiles':v['ids'],'font_px':12} for ch,v in units.items()},'all_paired_atlases_updated':streams,'numeric_name_and_stat_consumers_unchanged':True}
 
 
-def build(source,base,manifest):
- if digest(source)!=SOURCE_SHA or digest(base)!=V20_SHA:raise ValueError('Wrong source/v20 delivery fingerprint')
+def build(source,base,manifest,*,append_start=None,input_contract=None):
+ if digest(source)!=SOURCE_SHA:raise ValueError('Wrong source fingerprint')
+ if input_contract is None:
+  if digest(base)!=V20_SHA:raise ValueError('Wrong v20 fingerprint')
+ elif input_contract!=digest(base):raise ValueError('Fresh-stage UI contract mismatch')
  if struct.unpack_from('<I',base,FILE_ARCHIVE_LITERAL)[0]!=BASE+ARCHIVE:raise ValueError('File archive consumer already modified')
- if struct.unpack_from('<I',base,YESNO_POINTER)[0]!=BASE+9403768:raise ValueError('Wrong v20 yes/no pointer')
+ choice_record=next(r for r in manifest['records'] if r['id']=='plain-713F08')
+ if struct.unpack_from('<I',base,YESNO_POINTER)[0]!=BASE+choice_record['offset']:raise ValueError('Wrong compiled yes/no pointer')
  assert base[0xD5EBC:FILE_ARCHIVE_LITERAL]==source[0xD5EBC:FILE_ARCHIVE_LITERAL]
- get,oldbase=resources(source);rom=bytearray(base);cursor=APPEND_START;writes=[]
+ get,oldbase=resources(source);rom=bytearray(base);cursor=APPEND_START if append_start is None else append_start;writes=[]
  def append(data,tag):
   nonlocal cursor
   cursor=(cursor+3)&~3;a=cursor
@@ -185,5 +189,5 @@ def build(source,base,manifest):
  allowed=set()
  for w in writes:allowed.update(range(w['offset'],w['offset']+w['bytes']))
  assert all(i in allowed for i,(a,b) in enumerate(zip(base,result)) if a!=b)
- return result,{'schema':'gba-v21-user-screenshot-ui-fixes','status':'candidate-awaiting-runtime-verification','source_sha256':SOURCE_SHA,'baseline_sha256':V20_SHA,'target_sha256':digest(result),'append_start':APPEND_START,'append_end':cursor,'writes':writes,'choice':{'offset':yes_at,'encoded_hex':choice.hex(),'original_width_px':56,'original_columns_per_row':[3,4],'source_record':'plain-713F08','semantic_tokens_unchanged':['是',['ALIGN'],'否'],'padding_is_compiler_layout_only':True},'file_OBJ':meta,'file_BG':bgmeta,'private_archive':{'offset':newarc_at,'entries':entries,'only_changed_IDs':[TILE_ID,TEMPLATE_ID]},'font_ID_registry_unchanged':True,'all_primary_and_compact_font_bitmap_bytes_unchanged':True,'no_new_CPU_instructions':True,'remaining':'Title and other unrequested graphical Japanese still incomplete; no full playthrough/save compatibility certification.'}
+ return result,{'schema':'gba-v21-user-screenshot-ui-fixes','status':'candidate-awaiting-runtime-verification','source_sha256':SOURCE_SHA,'baseline_sha256':digest(base),'target_sha256':digest(result),'append_start':APPEND_START if append_start is None else append_start,'append_end':cursor,'writes':writes,'choice':{'offset':yes_at,'encoded_hex':choice.hex(),'original_width_px':56,'original_columns_per_row':[3,4],'source_record':'plain-713F08','semantic_tokens_unchanged':['是',['ALIGN'],'否'],'padding_is_compiler_layout_only':True},'file_OBJ':meta,'file_BG':bgmeta,'private_archive':{'offset':newarc_at,'entries':entries,'only_changed_IDs':[TILE_ID,TEMPLATE_ID]},'font_ID_registry_unchanged':True,'all_primary_and_compact_font_bitmap_bytes_unchanged':True,'no_new_CPU_instructions':True,'remaining':'Title and other unrequested graphical Japanese still incomplete; no full playthrough/save compatibility certification.'}
 
