@@ -93,6 +93,9 @@ def build(args):
   env=os.environ.copy();env['PYTHONUTF8']='1';env['GENKI_SOURCE_ROM']=str(args.rom.resolve())
   with (out/'build.log').open('w',encoding='utf-8') as log:
    subprocess.run([sys.executable,str(out/'tools/build_cn.py'),'--rom',str(args.rom.resolve())],env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
+  bare=json.loads((out/'build/manifest.json').read_text('utf-8'))
+  if bare['rejected']:raise ValueError('Rejected translation records; inspect build.log; no final artifact published')
+  if any(not 0x714091<=int(h['id'].split('-')[-1],16)<0x714144 for h in bare['holds']):raise ValueError('Unexpected held text record; inspect build.log')
   cmd=[sys.executable,str(ROOT/'tools/project.py'),'_compose','--stage',str(out),'--rom',str(args.rom.resolve()),'--profile',args.profile]
   with (out/'assets.log').open('w',encoding='utf-8') as log:subprocess.run(cmd,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
   target=(out/'slime-cn.gba').read_bytes()
@@ -110,6 +113,14 @@ def compose(args):
  if args.profile=='ui-candidate':
   from gba_user_ui_v21 import build as ui
   rom,meta=ui(source,rom,manifest);write_json(stage/'ui-candidate.json',meta)
+  manifest['appended_used']=meta['append_end']-0x800000
+  manifest['write_regions'].extend({'offset':r['offset'],'length':r['bytes'],'purpose':r['tag']} for r in meta['writes'])
+  from cn_codec import CNCodec
+  codec=CNCodec(json.loads((stage/'build/font-map.json').read_text('utf-8')))
+  record=next(r for r in manifest['records'] if r['id']=='plain-713F08')
+  record['offset']=meta['choice']['offset'];record['bytes']=len(bytes.fromhex(meta['choice']['encoded_hex']))
+  record['tokens']=codec.decode(rom,record['offset'],'plain')[0]
+  record['layout']['ui_candidate_padding']=meta['choice']
  manifest['stage']='public-source-'+args.profile;manifest['target_sha256']=sha(rom)
  (stage/'slime-cn.gba').write_bytes(rom);write_json(stage/'manifest.json',manifest)
  print(sha(rom))

@@ -20,7 +20,7 @@
 
 ## 2. 像素与 map 的位域
 
-- 4bpp tile = 32 字节（8 行 × 4 字节），高半字节是左侧像素。8bpp tile = 64 字节。
+- 4bpp tile = 32 字节（8 行 × 4 字节），低半字节是左侧像素，高半字节是右侧像素。8bpp tile = 64 字节。
 - u16 map 项：bit0..9 = tile ID，bit10 = 水平翻转，bit11 = 垂直翻转，bit12..15 = 调色板 bank。
 - 起名格用 8bpp + **字节** map（1024 字节 = 32×32 格）；不要拿 u16 map 的解析器去读它，`tools/gba_graphics_engine.py` 为此单独实现。
 - OBJ 部件不按 map：`tools/gba_resident_obj_labels.py` 的 `decode_parts/encode_parts` 按"起始 tile + x 偏移 + 宽度"逐像素拼 32×16/72×16 精灵。

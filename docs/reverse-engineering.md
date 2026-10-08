@@ -147,10 +147,12 @@
 - 自然救出 100 名居民、自然解锁城镇菜单、全通关、实体硬件。
 - 原版与跨版本电池存档兼容（保存字形 ID 不变只是必要条件，不是证明）。
 
-## 12. 接手步骤
+## 12. 接手步骤（公开入口）
 
 1. **改文本**：动 构建输出的 `data/inventory.json` 对应的作者稿（`历史本机记录:work/translation-*/out/chunk-*.json`）与 `data/review-overrides.json`，然后 `python -X utf8 tools/build_cn.py --rom <原日版>`；构建后用 `tools/audit_gba.py` 复核。不要手改 `build/slime-cn.gba`（该目录也不随本仓库分发）。
 2. **加新字**：只往 `data/gba-font-ids.json` 尾部追加；运行一次构建，确认注册表仍连续、`build/font-map.json` 与之一致。任何时候都不要重排旧 ID。
 3. **新增/修改消费者**：先用 capstone 定位真实调用点（`ldr rX,[pc,#N]` 求 literal、`bl 0x8000858` 找资源 getter、`0x98AC8` 序言 `f0b544464d4646` 找解压器），把源字节指纹写进断言，再追加存根并留恢复地址；不要凭提示里的地址直接改。
 4. **测**：先跑离线契约（`历史本机记录:tests/test_gba_*.py`，不需要 ROM）；需要 ROM 的受控与自然路线口径见 `docs/graphics-and-debugging.md` 第 8、9 节。
 5. **发布前**：确认 manifest 的 `target_sha256`、BPS、ZIP 三者互相对得上，`KNOWN-ISSUES.md` 里的未证事项仍成立。
+
+> 当前入口用 `project.py` 与 `verify_native.py`，无须历史 rebase快照或本机日志。ROM-free测试、原样重建、改稿、可选原生执行及mGBA路线见 `docs/building.md` 和 `docs/verification.md`。

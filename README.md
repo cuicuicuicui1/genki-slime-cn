@@ -14,7 +14,7 @@
 | 从源码重建 v20 | [构建指南](docs/building.md) |
 | 精修译文／换成其他语言 | [译文编辑指南](docs/translation-format.md) |
 | 理解字库、字码、窗口、指针破解 | [文本与引擎逆向](docs/reverse-engineering.md) |
-| 修改标题、菜单、HUD 等图形字 | [图形与调试](docs/graphics-and-debugging.md) / [资源台账](docs/resource-index.md) |
+| 修改标题、菜单、HUD 等图形字 | [图形与调试](docs/graphics-and-debugging.md) / [资源台账](docs/resource-index.md) / [后续清单](docs/roadmap.md) |
 | 理解哪些测试真的做过 | [验证边界](docs/verification.md) |
 | 报乱码／提交修改 | [贡献指南](CONTRIBUTING.md) / Issues |
 

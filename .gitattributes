@@ -1,1 +1,4 @@
 * -text
+assets/fonts/** linguist-vendored
+research/*.json linguist-generated
+data/gba-review-ledger.json linguist-generated
