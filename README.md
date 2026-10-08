@@ -2,11 +2,13 @@
 
 ## 新增：v22 图形补全版本
 
-标题Logo和31帧文字动画、砸壶15帧动画、文件命令/复制提示、救援结算、三类排行榜、开始/通关/选择/确认提示及文件卡中文姓名已加入独立v22流水线。旧v20补丁和Release保持不变。见 [本轮图形破解与构建](docs/graphics-v22.md)、[v22补丁目录](releases/v22) 和 [验证摘要](evidence/graphics-v22-delivery.json)。
+标题Logo和31帧文字动画、砸壶15帧动画、文件命令/复制提示、救援结算、三类排行榜、开始/通关/选择/确认提示及文件卡中文姓名已加入独立v22流水线。旧v20补丁和Release保持不变。见 [本轮图形破解与构建](docs/graphics-v22.md)、[v22补丁目录](releases/v22)、[验证摘要](evidence/graphics-v22-delivery.json) 和 [干净克隆重建证明](evidence/graphics-v22-clean-rebuild.json)。
 
 ```sh
 python -X utf8 tools/project.py build --rom "自己的原版.gba" --out "outputs/v22" --profile v22
 ```
+
+干净Git克隆和新虚拟环境已从原版重建到同一目标／补丁SHA；Windows与Ubuntu CI均通过。
 
 本轮验证：39项ROM-free测试、实际ARMv4T图形/文件卡消费者、正文/姓名原生检查、独立Python与Flips补丁回放，以及隔离mGBA的3000帧标题/7000帧新游戏路线。
 

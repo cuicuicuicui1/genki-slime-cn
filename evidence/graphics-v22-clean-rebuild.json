@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "verified_implementation_commit": "aeff04996ee6d7db81635a63218b33c0c931d5ee",
+  "fresh_Git_clone": true,
+  "fresh_isolated_venv": true,
+  "pinned_dependency_fetched_from_network": true,
+  "owner_original_ROM_required": true,
+  "historical_work_dirs_or_baseline_ROM_not_used": true,
+  "exact_source_rebuild_target_sha256": "fbf65f940f8800264cc5f9a15b3dd45980b11b4da389fa6acb44205e2f93a3ae",
+  "exact_source_rebuild_patch_sha256": "4c1174fcb35a396838302cacd66c9704f6af6d098a885c1c243d4200987de8db",
+  "rebuild_command": "python -X utf8 tools/project.py build --rom OWNER_SOURCE --out NEW_OUTPUT --profile v22",
+  "CI": {
+    "run_ID": 37798900894,
+    "commit": "aeff04996ee6d7db81635a63218b33c0c931d5ee",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "checks (ubuntu-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/cuicuicuicui1/genki-slime-cn/actions/runs/37798900894/job/113385537082"
+      },
+      {
+        "name": "checks (windows-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/cuicuicuicui1/genki-slime-cn/actions/runs/37798900894/job/113385537652"
+      }
+    ]
+  },
+  "published_release": {
+    "tag": "v22",
+    "url": "https://github.com/cuicuicuicui1/genki-slime-cn/releases/tag/v22",
+    "asset_name": "genki-slime-cn-v22-patch.zip",
+    "ZIP_sha256": "cb50156559f008dac3ac7f5b01380b5934981b644eb5526e79f1be575de16c51",
+    "asset_digest_verified": true,
+    "bytes": 488883
+  },
+  "bounds": "Clean rebuild and two ROM-free CI OSes; runtime evidence elsewhere; no full gameplay/save certification"
+}

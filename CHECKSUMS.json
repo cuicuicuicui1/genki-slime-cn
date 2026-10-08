@@ -66,8 +66,8 @@
       "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
     },
     "README.md": {
-      "bytes": 9052,
-      "sha256": "5a6b2f27e29ebb3bb6932bb614bd2cc42808641249cc8081dd6977b7e8e67a53"
+      "bytes": 9239,
+      "sha256": "190e0241ff87bf81d33a38870e49626a7609ab315a8d98ab7df055f90032a1c1"
     },
     "VERIFICATION-SUMMARY.json": {
       "bytes": 1810,
@@ -240,6 +240,10 @@
     "evidence/engineering-portability.json": {
       "bytes": 4436,
       "sha256": "49c28fd3e51ce04eff0c80cdc3c7eec1705366907cdc8f0b1c1953186f2032ed"
+    },
+    "evidence/graphics-v22-clean-rebuild.json": {
+      "bytes": 1618,
+      "sha256": "3444fb0d8098da3fae26afae2bb213bd0461b66dce925701ae50374ffac6305c"
     },
     "evidence/graphics-v22-delivery.json": {
       "bytes": 9968,
