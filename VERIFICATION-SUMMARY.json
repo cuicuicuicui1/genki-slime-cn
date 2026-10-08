@@ -1,0 +1,45 @@
+{
+  "schema": "user-approved-majority-localization-delivery-v20",
+  "delivery_date_local": "2026-10-08",
+  "delivery_timezone": "Asia/Hong_Kong",
+  "status": "delivered-under-user-approved-partial-scope",
+  "user_scope": "保持大部分汉化即可，然后进行交付",
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "target_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "patch_sha256": "a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c",
+  "injected_records": 2528,
+  "source_reviewed_dialogue": 2341,
+  "source_reviewed_plain_labels": 85,
+  "GBA_unit_contracts": 226,
+  "general_script_contracts": 6,
+  "native_card_checks": 26,
+  "native_paired_hook_cases": 216,
+  "controlled_status_UI_cases": 27,
+  "controlled_town_UI_cases": 22,
+  "fresh_delivery_coldboot_frames": 7000,
+  "fresh_delivery_coldboot_capture_pairs_exact": 47,
+  "independent_Python_and_Flips_replay_exact": true,
+  "independent_final_zip_CLI_exact_replay": true,
+  "bad_source_patch_and_overwrite_negative_tests": {
+    "wrong-source": {
+      "rejected": true,
+      "output_not_created": true
+    },
+    "damaged-patch": {
+      "rejected": true,
+      "output_not_created": true
+    },
+    "truncated-patch": {
+      "rejected": true,
+      "output_not_created": true
+    },
+    "existing-output": {
+      "rejected": true,
+      "fixture_preserved": true
+    }
+  },
+  "full_game_localization_complete": false,
+  "full_playthrough_verified": false,
+  "valid_cross_version_battery_save_compatibility_verified": false,
+  "scope_note": "Early natural route and explicitly controlled UI fixtures only; not full playthrough or natural rescue/unlock proof. Summary excludes local paths and raw logs."
+}

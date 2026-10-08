@@ -1,0 +1,26 @@
+# No ROM, saves, firmware, credentials, or raw work directories
+*.gba
+*.gb
+*.gbc
+*.nds
+*.sfc
+*.smc
+*.bin
+*.bios
+*.sav
+*.srm
+*.sa1
+*.ss0
+*.ss1
+*.State
+*.state
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+build/
+inputs/
+upstream/
+work/
+releases/

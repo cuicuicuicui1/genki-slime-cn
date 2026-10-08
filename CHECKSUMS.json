@@ -1,0 +1,50 @@
+{
+  "source_ROM_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "target_ROM_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "files": {
+    ".gitattributes": {
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    ".gitignore": {
+      "bytes": 262,
+      "sha256": "0f3d5e1929e4d6236d5e038d7c7871a7a45ea9cf7252405238ada68dfedb0028"
+    },
+    "apply_bps.py": {
+      "bytes": 3469,
+      "sha256": "bf7b99c0fe3465a53e9ff42680cd9a09f853ec944c2046ea874a4a0e503b47d9"
+    },
+    "DELIVERY-STATUS.json": {
+      "bytes": 1963,
+      "sha256": "323866f30194e384f068b282dcff727c7c5590d1d66c08c63bd5bba7af8d6169"
+    },
+    "FONT-NOTICES.md": {
+      "bytes": 624,
+      "sha256": "3cf52ea2bd4b802c153793607e190ce544ee0eea3be2f30602b05d43be758158"
+    },
+    "genki-slime-cn.bps": {
+      "bytes": 391208,
+      "sha256": "a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c"
+    },
+    "KNOWN-ISSUES.md": {
+      "bytes": 1795,
+      "sha256": "0cdde94b0dff5eb0e83bdb8f17359e77f46f2cb061c34c62581113eaf5249615"
+    },
+    "OFL-Unifont.txt": {
+      "bytes": 4340,
+      "sha256": "869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded"
+    },
+    "OFL.txt": {
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    "README.md": {
+      "bytes": 3391,
+      "sha256": "38ba4b51478552dd1269c3ca62e2b3c216349681cfb0009064c1511be1afb3bf"
+    },
+    "VERIFICATION-SUMMARY.json": {
+      "bytes": 1810,
+      "sha256": "30ed9c34dc5f9168ca7d3d3ab8d4130aa46d3a812adc47a069dee3e51473a7a2"
+    }
+  }
+}
