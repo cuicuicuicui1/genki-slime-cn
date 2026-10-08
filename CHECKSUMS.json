@@ -1,34 +1,60 @@
 {
+  "schema": "public-engineering-tree-checksums-v1",
+  "scope": "Current repository files excluding CHECKSUMS.json itself; original v20 Release asset remains immutable",
   "source_ROM_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
   "target_ROM_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
   "files": {
     ".gitattributes": {
-      "bytes": 9,
-      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+      "bytes": 128,
+      "sha256": "a660f773a913cea699cef78b163790467b03576476c6edbfc42c98b7e1f674ee"
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.yml": {
+      "bytes": 700,
+      "sha256": "a5b5e27b9d1a176ce8cb88b1c36daf04603b97767b4863dd4ff16bedfcdd6956"
+    },
+    ".github/ISSUE_TEMPLATE/translation.yml": {
+      "bytes": 522,
+      "sha256": "d87bd3d7bbf27cfecf1d0eb5c9ff2d84af50cba611200601fab520086f747f05"
+    },
+    ".github/pull_request_template.md": {
+      "bytes": 290,
+      "sha256": "9f12ea863b2270689a5034d4e988a4e34b6462e9036fc6c1f39e0dcc8b8ba7bc"
+    },
+    ".github/workflows/rom-free-tests.yml": {
+      "bytes": 642,
+      "sha256": "9b56a3a27b348eb356617363e3d1cdc766a062ac86dd6162086ff5329bd21613"
     },
     ".gitignore": {
-      "bytes": 262,
-      "sha256": "0f3d5e1929e4d6236d5e038d7c7871a7a45ea9cf7252405238ada68dfedb0028"
+      "bytes": 348,
+      "sha256": "5893d2664b6bbbca5fcc008ba14005a5cf546eb7105bbc47622a27400d3eda72"
     },
-    "apply_bps.py": {
-      "bytes": 3469,
-      "sha256": "bf7b99c0fe3465a53e9ff42680cd9a09f853ec944c2046ea874a4a0e503b47d9"
+    "AGENTS.md": {
+      "bytes": 1346,
+      "sha256": "6ad94f8bbb4d398de7f3c215cf559994f8f0ba973f5571f3a84e450ca0be5188"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 2284,
+      "sha256": "88160b07c68980dabbb5f775ba28dc59e1b1e291ac9fc19470dd1face04d7337"
+    },
+    "COPYING.md": {
+      "bytes": 1489,
+      "sha256": "af3bacccba027be1ab6cc2e2cd884ded81c022e6b7fe1ad88a702aef0b00dbb8"
     },
     "DELIVERY-STATUS.json": {
-      "bytes": 1963,
-      "sha256": "323866f30194e384f068b282dcff727c7c5590d1d66c08c63bd5bba7af8d6169"
+      "bytes": 2188,
+      "sha256": "5a34f97f9af454718d8fa476b30ee22b95a6e1275ed05706fcdf3296b16e0e11"
     },
     "FONT-NOTICES.md": {
       "bytes": 624,
       "sha256": "3cf52ea2bd4b802c153793607e190ce544ee0eea3be2f30602b05d43be758158"
     },
-    "genki-slime-cn.bps": {
-      "bytes": 391208,
-      "sha256": "a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c"
-    },
     "KNOWN-ISSUES.md": {
-      "bytes": 1795,
-      "sha256": "0cdde94b0dff5eb0e83bdb8f17359e77f46f2cb061c34c62581113eaf5249615"
+      "bytes": 2553,
+      "sha256": "32abc0f10f29620083a5190e9286fbca737ef8dcaa231074c43909a23e15d30e"
+    },
+    "Makefile": {
+      "bytes": 223,
+      "sha256": "8e56da60dce0666dd6a3f3b6b7fea331834f7a2650f75f101035026012fcd0d2"
     },
     "OFL-Unifont.txt": {
       "bytes": 4340,
@@ -39,12 +65,296 @@
       "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
     },
     "README.md": {
-      "bytes": 3391,
-      "sha256": "38ba4b51478552dd1269c3ca62e2b3c216349681cfb0009064c1511be1afb3bf"
+      "bytes": 6781,
+      "sha256": "149fbbcf77cbcc7dba004e034c01c83bf661691e21c0847e9b65746b5889e814"
     },
     "VERIFICATION-SUMMARY.json": {
       "bytes": 1810,
       "sha256": "30ed9c34dc5f9168ca7d3d3ab8d4130aa46d3a812adc47a069dee3e51473a7a2"
+    },
+    "apply_bps.py": {
+      "bytes": 3469,
+      "sha256": "bf7b99c0fe3465a53e9ff42680cd9a09f853ec944c2046ea874a4a0e503b47d9"
+    },
+    "assets/fonts/fusion12/LICENSES/ark-pixel/OFL.txt": {
+      "bytes": 4412,
+      "sha256": "3ab41567e68e3988ba1ef16dd2644eca95ca5648ea12e7d46e6287fc0bbe5aee"
+    },
+    "assets/fonts/fusion12/LICENSES/cubic-11/OFL.txt": {
+      "bytes": 5364,
+      "sha256": "2b6e5938e5cffa0b9e183bd05f8c363e174e7ebed1a0556e2855fd1707fa2188"
+    },
+    "assets/fonts/fusion12/LICENSES/galmuri/LICENSE.txt": {
+      "bytes": 4360,
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
+    },
+    "assets/fonts/fusion12/OFL.txt": {
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    "assets/fonts/fusion12/fusion-pixel-12px-monospaced-zh_hans.bdf": {
+      "bytes": 5207301,
+      "sha256": "bb2cdfa029674d83ad9fc6b01bba11752f61779cae1219a722c7ccee96b2d0ae"
+    },
+    "assets/fonts/fusion8/LICENSES/boutique-bitmap-7x7/OFL.txt": {
+      "bytes": 5463,
+      "sha256": "ad588b5ce58a02179b806381339fd380e5110771f2fa91279af026fd3ab97002"
+    },
+    "assets/fonts/fusion8/LICENSES/galmuri/LICENSE.txt": {
+      "bytes": 4360,
+      "sha256": "86a3ee9495f942f0243f18c103da9faca27adb88142613edb8bb852e56c892c1"
+    },
+    "assets/fonts/fusion8/LICENSES/misaki/misaki.txt": {
+      "bytes": 9016,
+      "sha256": "82929cc3b34c79b6a67f21fe137c7bb165589c9e34ba1441611e493afd67dfca"
+    },
+    "assets/fonts/fusion8/LICENSES/miseki-bitmap/LICENSE.txt": {
+      "bytes": 4358,
+      "sha256": "e855b45b384d37c9a778119271bd9c32706e3f1f9f278de0ad47347606eea846"
+    },
+    "assets/fonts/fusion8/OFL.txt": {
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    "assets/fonts/fusion8/fusion-pixel-8px-monospaced-zh_hans.bdf": {
+      "bytes": 3095936,
+      "sha256": "3c00ccab762c0c75967eea724f5cd57feb544be7a0814d06233160ef9482a50b"
+    },
+    "assets/fonts/unifont16/OFL-1.1.txt": {
+      "bytes": 4340,
+      "sha256": "869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded"
+    },
+    "assets/fonts/unifont16/unifont-16.0.03.bdf": {
+      "bytes": 9384069,
+      "sha256": "49fab9847c2caa06e39dad19ff34ccd7cfb75a13865f171d0f413887ad606c16"
+    },
+    "data/auxiliary-translations.json": {
+      "bytes": 10963,
+      "sha256": "68d755a49f08565eaa37d9a128e4d0195c1a92d8207e2a70b553230f3f6f5e30"
+    },
+    "data/canonical-names.json": {
+      "bytes": 3456,
+      "sha256": "d74d07905ae87dba8d976e0e38949423e3e26d6a24cbbf58522f7cf34a63c69f"
+    },
+    "data/credits-cn.json": {
+      "bytes": 12223,
+      "sha256": "a348f4d44b6fe33d84e5197d85e0d1c468c04ef93ef948a581da83462ce14db8"
+    },
+    "data/gba-font-ids.json": {
+      "bytes": 29564,
+      "sha256": "989c9e973e1c2985e0df37c8f7ff1744e48dac52bec448303b497f218f7eb27c"
+    },
+    "data/gba-font-profile.json": {
+      "bytes": 839,
+      "sha256": "046fd437cf3c9796c67c769fc7b823eb3a0a5dbd74e762f80bd10fbc1217cefc"
+    },
+    "data/gba-name-body-rules.json": {
+      "bytes": 4758,
+      "sha256": "3b3db1fcef2a70828d49bca11874ca2fa1e55c2ac4df1487dfc73fa8a7009c7c"
+    },
+    "data/gba-name-entry.json": {
+      "bytes": 742,
+      "sha256": "6e214fecfd146bbe5457742c71dfa2aa54af5c74c8c7891529d0008683f14b36"
+    },
+    "data/gba-plain-window-profiles.json": {
+      "bytes": 787,
+      "sha256": "8799c303fd606fd75e7c8ff94e3f4c6ea06115581ad15876e21eb74b2f429cdb"
+    },
+    "data/gba-review-ledger.json": {
+      "bytes": 808908,
+      "sha256": "048c61cae4e0986392d688d215ff4d53e92ae74bafe8bab5433e15c6af907d68"
+    },
+    "data/gba-source-glyph-corrections.json": {
+      "bytes": 1309,
+      "sha256": "798f2047c88d06be3bf84eae2ba0f0be5fa8b6bd5eabee3c94fbdc8386e4f61d"
+    },
+    "data/glossary.json": {
+      "bytes": 709,
+      "sha256": "0567f9b1d9d360bd4cfef3c4da225376f43fa1ab75cb999dca21f0f00a9b1917"
+    },
+    "data/graphics-ui-backlog.json": {
+      "bytes": 7060,
+      "sha256": "58868466542f47763e0e6cf728a98985ee93945ce2668ff9fc55ef53376eae5f"
+    },
+    "data/review-overrides.json": {
+      "bytes": 1209611,
+      "sha256": "54d2810fab93f0559181b48b45be0fe091bbf5ff90dfa6791bb473eebef9c16a"
+    },
+    "data/term-normalization.json": {
+      "bytes": 211,
+      "sha256": "cf566fd3e345e074eb709e3679635ec14e8171c2387cd8fd3890163b7d0b5b54"
+    },
+    "dependencies.lock.json": {
+      "bytes": 544,
+      "sha256": "a642c035e0c29f148c202081c27ae8634160b9c1f113f9906dcca58f3e2bca76"
+    },
+    "docs/building.md": {
+      "bytes": 4954,
+      "sha256": "2e74919ec2fc877729c1fcb3e91ede40d912d651a1a6f1b0a6a96f7ffde92a88"
+    },
+    "docs/graphics-and-debugging.md": {
+      "bytes": 18122,
+      "sha256": "74f3a0ed7fc34a4c471062b3a28e2d802f42636bdac77ed16969ff1b0911bb09"
+    },
+    "docs/resource-index.md": {
+      "bytes": 4834,
+      "sha256": "8a6d61f008d28e4debbc53b5592f07a074bd015134f40fd48ab895b86c80cb48"
+    },
+    "docs/reverse-engineering.md": {
+      "bytes": 19110,
+      "sha256": "086d225cc0721be7c3fb7c77f0351ae8069b9f16a638830bdf111491b485f463"
+    },
+    "docs/roadmap.md": {
+      "bytes": 1549,
+      "sha256": "a152b206a65d7da68140a563deaa7b0600835213c93fe0d2917d9293f0779c52"
+    },
+    "docs/translation-format.md": {
+      "bytes": 3742,
+      "sha256": "f34034195236006d4910a4292958cc0adcf8fa4ec9add247d70b15092dc25c5f"
+    },
+    "docs/verification.md": {
+      "bytes": 3810,
+      "sha256": "439e93c6934f05f2ad3a6281762a331a226a93ae4b160605e88c664594b6d4f9"
+    },
+    "genki-slime-cn.bps": {
+      "bytes": 391208,
+      "sha256": "a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c"
+    },
+    "requirements-test-emulator.txt": {
+      "bytes": 35,
+      "sha256": "95b34ff1dd7b4db21e07e0801a1655d0df03f337c5d9a2fb0a5d7e8de6f3a5ee"
+    },
+    "requirements.txt": {
+      "bytes": 73,
+      "sha256": "8ad8e9685d89629b7aab2111f029da163bc60c6e6d34010c5bd123f40e87706f"
+    },
+    "research/title-parent-resource-decodes.json": {
+      "bytes": 953,
+      "sha256": "aeb74137952e0b277188ba3884e8db119669f3456f1e10d6e03cedccc5accb2e"
+    },
+    "research/title-parent-source-census.json": {
+      "bytes": 129048,
+      "sha256": "8981e7e4af7e6bf3e5af854deb8f7ab8ea6c7e63daa59cf895f7aa16d975db8c"
+    },
+    "tests/test_project.py": {
+      "bytes": 6717,
+      "sha256": "900df2794e094420915516041f14ccd28b9b08e0c36dde889c55b6648aaedc23"
+    },
+    "tools/audit_gba.py": {
+      "bytes": 6019,
+      "sha256": "89c08fc16105c9ab92c794b7bae59974fd5df957ba8f8bc16e84d892c5a611db"
+    },
+    "tools/audit_public_tree.py": {
+      "bytes": 1600,
+      "sha256": "5bd377050328295d5febc0265b9687fd904a38a6c4f4d28ae574dedc94249dd1"
+    },
+    "tools/bps_patch.py": {
+      "bytes": 3190,
+      "sha256": "7f47ebb0f533d264ef7ce7b20405e848e799c3096aa0e0ca4622b75fb50c1b3a"
+    },
+    "tools/build_cn.py": {
+      "bytes": 15902,
+      "sha256": "cb8785de8023db83c62b112a1ae5b3d534fa25b6abd14039a3924317a39ddced"
+    },
+    "tools/cn_codec.py": {
+      "bytes": 5901,
+      "sha256": "23b0bb4f1c2ebd2ffd853bd717b7a032ca733bddd3b2cf3610864afbe4178a34"
+    },
+    "tools/cn_engine.py": {
+      "bytes": 8551,
+      "sha256": "b02ba72ffc0ebb6917b1a6bd85cc97e8add4be92d66e8fd207439bd93db6cc4f"
+    },
+    "tools/gba_file_labels.py": {
+      "bytes": 22388,
+      "sha256": "0dce3e70190a0fe3f594c9f5fc9c181d3567285ea6a8c587bf9dc9218ef1324d"
+    },
+    "tools/gba_graphics_engine.py": {
+      "bytes": 6783,
+      "sha256": "05679e86da2abba1b3798410e61f4f68619d2e90246c9b404d129567c16c6139"
+    },
+    "tools/gba_main_menu_graphics.py": {
+      "bytes": 15109,
+      "sha256": "c58ab6ca2651d8e363e1cca94e9c5c407b7c884ce4f77f79305fb210c89ae278"
+    },
+    "tools/gba_name_engine.py": {
+      "bytes": 6260,
+      "sha256": "f6e197163c428a9b4f827bf4e65a1b79d1c8bb8473974c7efa84c794abd5d7ba"
+    },
+    "tools/gba_plain_layout.py": {
+      "bytes": 4733,
+      "sha256": "2fe40aaa0a5fb9aca8f0645bc74cb8b5240cd68d02846421879a5f152d28ca2e"
+    },
+    "tools/gba_resident_font12.py": {
+      "bytes": 8123,
+      "sha256": "da07c53b6ca1316f72053a5c2acae1cffcf778590c5b3110d9c71b25b2d2acb5"
+    },
+    "tools/gba_resident_layout.py": {
+      "bytes": 2068,
+      "sha256": "327dff758124215f6efcb1b3cc6994dbe285b52b93a55a0cf6f4c4f2382c2334"
+    },
+    "tools/gba_resident_obj_labels.py": {
+      "bytes": 8001,
+      "sha256": "6136a6aaaaae0f47ef335ba8e6dd92642ad27b84c25857a291f29c2cd2f13cfb"
+    },
+    "tools/gba_resident_scroll12.py": {
+      "bytes": 4383,
+      "sha256": "bbbefec439fb19bac00d71b37883b06b01c172eb3f5cb116608ed2cc6f614414"
+    },
+    "tools/gba_resident_status_cards.py": {
+      "bytes": 10121,
+      "sha256": "520a5054a2b03dcaf65c298729381371cd00b6060936137f8aab32c9457295fe"
+    },
+    "tools/gba_speaker_font.py": {
+      "bytes": 4059,
+      "sha256": "492d90305893e19d4d8a62b1268b4c1ef25a0c6e25a60a93146f9d4f4862904a"
+    },
+    "tools/gba_text_layout.py": {
+      "bytes": 5541,
+      "sha256": "234bfef632c0ce3072bf7a32533d3e40b2652ac615ab8c76010e28462405c7c8"
+    },
+    "tools/gba_town_resident_graphics.py": {
+      "bytes": 15855,
+      "sha256": "5b436da26b0710cc949f691d9e271bd0d2760fa4ca99a61f144b9affaaea6d38"
+    },
+    "tools/gba_ui_v03.py": {
+      "bytes": 15544,
+      "sha256": "87983ab8725dbba98739371a69d74b73930f9e364671711d1e8a52dfd8cb46f9"
+    },
+    "tools/gba_user_ui_v21.py": {
+      "bytes": 11884,
+      "sha256": "a081b5cdd7e9c30a835c0fce117a6d95fc41d8a9e48f88720a1599f16d9fdb7c"
+    },
+    "tools/inspect_graphics.py": {
+      "bytes": 1218,
+      "sha256": "6b9ca1b326a43b040ac2de9545bc947dd50d5334ae17b3ad7838094d6ed2f44e"
+    },
+    "tools/libretro_frontend.py": {
+      "bytes": 6218,
+      "sha256": "0cb9416abf4e4dae1fc6587de17e91975b71e4c1a6bcaffe85a546b2b4525a27"
+    },
+    "tools/project.py": {
+      "bytes": 10464,
+      "sha256": "73136788ee687818b2949099e0f626b82cd8f3a86a134b75a2bc96d873846854"
+    },
+    "tools/project_paths.py": {
+      "bytes": 192,
+      "sha256": "f257e2a3c36222a2712b24df11470f2f8e1aabfbcc8ee4db77aa5dfdf83fd4f3"
+    },
+    "tools/smoke_mgba.py": {
+      "bytes": 1246,
+      "sha256": "e29203d0e69d7263d19f5253486603df0c54ed4798a20925788eda44bf68ec44"
+    },
+    "tools/test_engine.py": {
+      "bytes": 10487,
+      "sha256": "3c0caf71976e4c06eaa5d75e8e40c8406b9146c8a344a818ecfc82de5598cb88"
+    },
+    "tools/test_gba_name.py": {
+      "bytes": 6363,
+      "sha256": "f228bd0ae26003f9643aa81e7dff81ae3eb05c8f0d3202d99a2dc29fe3e0ea30"
+    },
+    "tools/verify_native.py": {
+      "bytes": 2217,
+      "sha256": "e1c7b37d0719f57ed4e83352e69b30a045ba29ff2c47efcba0f15a105dca712b"
     }
   }
 }
