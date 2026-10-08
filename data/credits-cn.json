@@ -1,0 +1,628 @@
+[
+  {
+    "id": "credits-7141B8",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "元气史莱姆"
+        ],
+        "separator": 2,
+        "encoded_bytes": 18
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "制作人员"
+        ],
+        "separator": 0,
+        "encoded_bytes": 4
+      }
+    ]
+  },
+  {
+    "id": "credits-7141D4",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "执行制作人"
+        ],
+        "separator": 2,
+        "encoded_bytes": 15
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "堀井雄二"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-7141F0",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "角色设计"
+        ],
+        "separator": 2,
+        "encoded_bytes": 11
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "鸟山明"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-714209",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "音乐"
+        ],
+        "separator": 2,
+        "encoded_bytes": 4
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "椙山浩一"
+        ],
+        "separator": 0,
+        "encoded_bytes": 9
+      }
+    ]
+  },
+  {
+    "id": "credits-71421C",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "TOSE"
+        ],
+        "separator": 2,
+        "encoded_bytes": 3
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "制作人员"
+        ],
+        "separator": 0,
+        "encoded_bytes": 4
+      }
+    ]
+  },
+  {
+    "id": "credits-714229",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "导演"
+        ],
+        "separator": 2,
+        "encoded_bytes": 6
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "ほそやま　たくみ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-71423D",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "主程序"
+        ],
+        "separator": 2,
+        "encoded_bytes": 10
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "ひぐち　あつお"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-714254",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "主设计师"
+        ],
+        "separator": 2,
+        "encoded_bytes": 9
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "やまだ　しんのすけ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 9
+      }
+    ]
+  },
+  {
+    "id": "credits-71426C",
+    "lines": [
+      {
+        "tile_row": 3,
+        "x": "center",
+        "tokens": [
+          "制作协调"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 7,
+        "x": "center",
+        "tokens": [
+          "しんたに　なおじ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "なべしま　ひろゆき"
+        ],
+        "separator": 2,
+        "encoded_bytes": 9
+      },
+      {
+        "tile_row": 11,
+        "x": "center",
+        "tokens": [
+          "いながき　かな"
+        ],
+        "separator": 2,
+        "encoded_bytes": 7
+      },
+      {
+        "tile_row": 13,
+        "x": "center",
+        "tokens": [
+          "しまづ　たつや"
+        ],
+        "separator": 2,
+        "encoded_bytes": 7
+      },
+      {
+        "tile_row": 15,
+        "x": "center",
+        "tokens": [
+          "さわさき　ともこ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-7142AD",
+    "lines": [
+      {
+        "tile_row": 5,
+        "x": "center",
+        "tokens": [
+          "程序"
+        ],
+        "separator": 2,
+        "encoded_bytes": 6
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "かわて　だいち"
+        ],
+        "separator": 2,
+        "encoded_bytes": 7
+      },
+      {
+        "tile_row": 11,
+        "x": "center",
+        "tokens": [
+          "ときだ　やすたか"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 13,
+        "x": "center",
+        "tokens": [
+          "こう　まさふみ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-7142D5",
+    "lines": [
+      {
+        "tile_row": 4,
+        "x": "center",
+        "tokens": [
+          "怪物设计"
+        ],
+        "separator": 2,
+        "encoded_bytes": 13
+      },
+      {
+        "tile_row": 8,
+        "x": "center",
+        "tokens": [
+          "さわむら　あつみ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "うの　こうじろう"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 12,
+        "x": "center",
+        "tokens": [
+          "あさはら　くにお"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 14,
+        "x": "center",
+        "tokens": [
+          "すずき　もとひろ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-714311",
+    "lines": [
+      {
+        "tile_row": 3,
+        "x": "center",
+        "tokens": [
+          "地图设计"
+        ],
+        "separator": 2,
+        "encoded_bytes": 11
+      },
+      {
+        "tile_row": 7,
+        "x": "center",
+        "tokens": [
+          "みずじり　のりこ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "きくもと　たかこ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 11,
+        "x": "center",
+        "tokens": [
+          "ひのきだに　ゆきこ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 9
+      },
+      {
+        "tile_row": 13,
+        "x": "center",
+        "tokens": [
+          "いしざき　まさこ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 15,
+        "x": "center",
+        "tokens": [
+          "かくやま　よしこ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-714357",
+    "lines": [
+      {
+        "tile_row": 5,
+        "x": "center",
+        "tokens": [
+          "音乐部门"
+        ],
+        "separator": 2,
+        "encoded_bytes": 6
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "みやなが　ひでのり"
+        ],
+        "separator": 2,
+        "encoded_bytes": 9
+      },
+      {
+        "tile_row": 11,
+        "x": "center",
+        "tokens": [
+          "たかぎ　りょうえ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 13,
+        "x": "center",
+        "tokens": [
+          "つねもと　まさや"
+        ],
+        "separator": 0,
+        "encoded_bytes": 8
+      }
+    ]
+  },
+  {
+    "id": "credits-714382",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "SQUARE ENIX"
+        ],
+        "separator": 2,
+        "encoded_bytes": 11
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "制作人员"
+        ],
+        "separator": 0,
+        "encoded_bytes": 4
+      }
+    ]
+  },
+  {
+    "id": "credits-714397",
+    "lines": [
+      {
+        "tile_row": 5,
+        "x": "center",
+        "tokens": [
+          "第九开发部"
+        ],
+        "separator": 2,
+        "encoded_bytes": 9
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "部长"
+        ],
+        "separator": 2,
+        "encoded_bytes": 4
+      },
+      {
+        "tile_row": 13,
+        "x": "center",
+        "tokens": [
+          "みやけ　ゆう"
+        ],
+        "separator": 0,
+        "encoded_bytes": 6
+      }
+    ]
+  },
+  {
+    "id": "credits-7143B3",
+    "lines": [
+      {
+        "tile_row": 6,
+        "x": "center",
+        "tokens": [
+          "制作人"
+        ],
+        "separator": 2,
+        "encoded_bytes": 7
+      },
+      {
+        "tile_row": 10,
+        "x": "center",
+        "tokens": [
+          "わたべ　よしき"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-7143C7",
+    "lines": [
+      {
+        "tile_row": 4,
+        "x": "center",
+        "tokens": [
+          "首席制作人"
+        ],
+        "separator": 2,
+        "encoded_bytes": 11
+      },
+      {
+        "tile_row": 7,
+        "x": "center",
+        "tokens": [
+          "いぬづか　たいち"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 11,
+        "x": "center",
+        "tokens": [
+          "总制作人"
+        ],
+        "separator": 2,
+        "encoded_bytes": 12
+      },
+      {
+        "tile_row": 14,
+        "x": "center",
+        "tokens": [
+          "ちだ　ゆきのぶ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-7143F9",
+    "lines": [
+      {
+        "tile_row": 5,
+        "x": "center",
+        "tokens": [
+          "发行"
+        ],
+        "separator": 2,
+        "encoded_bytes": 8
+      },
+      {
+        "tile_row": 9,
+        "x": "center",
+        "tokens": [
+          "わだ　よういち"
+        ],
+        "separator": 2,
+        "encoded_bytes": 7
+      },
+      {
+        "tile_row": 12,
+        "x": "center",
+        "tokens": [
+          "ほんだ　けいじ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 7
+      }
+    ]
+  },
+  {
+    "id": "credits-714418",
+    "lines": [
+      {
+        "tile_row": 4,
+        "x": 18,
+        "tokens": [
+          "©２００３　ＡＲＭＯＲ　ＰＲＯＪＥＣＴ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 20
+      },
+      {
+        "tile_row": 7,
+        "x": 18,
+        "tokens": [
+          "©２００３　ＢＩＲＤ　ＳＴＵＤＩＯ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 18
+      },
+      {
+        "tile_row": 10,
+        "x": 18,
+        "tokens": [
+          "©２００３　ＫＯＩＣＨＩ　ＳＵＧＩＹＡＭＡ"
+        ],
+        "separator": 2,
+        "encoded_bytes": 22
+      },
+      {
+        "tile_row": 13,
+        "x": 18,
+        "tokens": [
+          "©２００３　ＳＱＵＡＲＥ　ＥＮＩＸ"
+        ],
+        "separator": 0,
+        "encoded_bytes": 18
+      }
+    ]
+  }
+]

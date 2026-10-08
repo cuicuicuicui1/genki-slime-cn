@@ -49,5 +49,7 @@
   "archive_contains_ROM_or_save": false,
   "known_issues": "KNOWN-ISSUES.md",
   "preserves_original_and_old_deliveries": true,
-  "no_further_automatic_full_localization_work": true
+  "no_further_automatic_full_localization_work": true,
+  "historical_release_snapshot": true,
+  "scope_note": "Describes immutable published v20, not the current graphics-development scope or public engineering completion."
 }

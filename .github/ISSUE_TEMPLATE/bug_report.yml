@@ -1,0 +1,27 @@
+name: 乱码或运行问题
+description: 提供可复现的场景（不要上传ROM或存档）
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: "请勿上传商业ROM、BIOS、完整存档或个人路径。"
+  - type: input
+    id: version
+    attributes:
+      label: 版本与目标ROM SHA256
+    validations:
+      required: true
+  - type: input
+    id: emulator
+    attributes:
+      label: 模拟器／核心版本
+  - type: textarea
+    id: steps
+    attributes:
+      label: 场景与复现按键
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果、预期结果与裁剪截图

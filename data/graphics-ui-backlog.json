@@ -1,0 +1,201 @@
+{
+  "scope": "21 traced static BG preview layers, not a complete graphics census",
+  "status": "extracted-not-localized",
+  "records": [
+    {
+      "name": "main-menu-early/0d4",
+      "preview": "main-menu-early-0d4.png",
+      "tiles": "777ac8",
+      "tilemap": "776c68",
+      "palette": "779958",
+      "evidence": "080c70e0..080c716a",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "main-menu-later/0d3",
+      "preview": "main-menu-later-0d3.png",
+      "tiles": "777ac8",
+      "tilemap": "776964",
+      "palette": "779958",
+      "evidence": "080c70e0..080c716a",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "town-menu/1e4",
+      "preview": "town-menu-1e4.png",
+      "tiles": "79caa0",
+      "tilemap": "7a0268",
+      "palette": "79f160",
+      "evidence": "080c72c0..080c72f2",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "rescue-menu/16e",
+      "preview": "rescue-menu-16e.png",
+      "tiles": "790fb4",
+      "tilemap": "79347c",
+      "palette": "7930e4",
+      "evidence": "080bb95c..080bb9d0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "rescue-menu/16d",
+      "preview": "rescue-menu-16d.png",
+      "tiles": "790fb4",
+      "tilemap": "7933cc",
+      "palette": "7930e4",
+      "evidence": "080bb95c..080bb9d0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "rescue-menu/170",
+      "preview": "rescue-menu-170.png",
+      "tiles": "790fb4",
+      "tilemap": "7937bc",
+      "palette": "7930e4",
+      "evidence": "080bb95c..080bb9d0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "rescue-menu/171",
+      "preview": "rescue-menu-171.png",
+      "tiles": "790fb4",
+      "tilemap": "793884",
+      "palette": "7930e4",
+      "evidence": "080bb95c..080bb9d0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "ranking-a/134",
+      "preview": "ranking-a-134.png",
+      "tiles": "78d810",
+      "tilemap": "7903c8",
+      "palette": "790278",
+      "evidence": "080c2392..080c23f0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "ranking-a/136",
+      "preview": "ranking-a-136.png",
+      "tiles": "78d810",
+      "tilemap": "790498",
+      "palette": "790278",
+      "evidence": "080c2392..080c23f0",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "ranking-b/139",
+      "preview": "ranking-b-139.png",
+      "tiles": "78d810",
+      "tilemap": "790aa8",
+      "palette": "790278",
+      "evidence": "080c2392..080c23be; 080c256a..080c2584",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "ranking-b/13a",
+      "preview": "ranking-b-13a.png",
+      "tiles": "78d810",
+      "tilemap": "790b44",
+      "palette": "790278",
+      "evidence": "080c2392..080c23be; 080c256a..080c2584",
+      "note": "Static BG layer only; runtime text, counters and sprite overlays omitted"
+    },
+    {
+      "name": "file-menu/756464",
+      "preview": "file-menu-756464.png",
+      "tiles": "751b90",
+      "tilemap": "756464",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d6652",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/75651c",
+      "preview": "file-menu-75651c.png",
+      "tiles": "751b90",
+      "tilemap": "75651c",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d66b4",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/7565bc",
+      "preview": "file-menu-7565bc.png",
+      "tiles": "751b90",
+      "tilemap": "7565bc",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d733c literal",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/756770",
+      "preview": "file-menu-756770.png",
+      "tiles": "751b90",
+      "tilemap": "756770",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d6a00 literal",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/756890",
+      "preview": "file-menu-756890.png",
+      "tiles": "751b90",
+      "tilemap": "756890",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d75ac literal",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/756a58",
+      "preview": "file-menu-756a58.png",
+      "tiles": "751b90",
+      "tilemap": "756a58",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d6d1c literal",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/756c58",
+      "preview": "file-menu-756c58.png",
+      "tiles": "751b90",
+      "tilemap": "756c58",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; map table 087d1c5c[0]",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/756e70",
+      "preview": "file-menu-756e70.png",
+      "tiles": "751b90",
+      "tilemap": "756e70",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; map table 087d1c5c[1]",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/757030",
+      "preview": "file-menu-757030.png",
+      "tiles": "751b90",
+      "tilemap": "757030",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; map table 087d1c5c[2]",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    },
+    {
+      "name": "file-menu/757788",
+      "preview": "file-menu-757788.png",
+      "tiles": "751b90",
+      "tilemap": "757788",
+      "palette": "751ab0",
+      "evidence": "080d5ebc..080d5ece; 080d7558 literal",
+      "note": "Static menu message layer; selection sprites and runtime text omitted"
+    }
+  ],
+  "localized_outside_this_census": {
+    "scope": "name-entry assets not among original 21 traced BG previews",
+    "resources": "two 8bpp CJK grid pages and 4bpp name panel (换字/完成)",
+    "report": "build/manifest.json.engine.graphics",
+    "note": "This does not complete the original 21-layer backlog or title/OBJ census."
+  }
+}

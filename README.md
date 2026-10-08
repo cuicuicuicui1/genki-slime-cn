@@ -1,50 +1,100 @@
-# 元气史莱姆1：冲击的尾巴团 · 简体中文 v20
+# 元气史莱姆1：冲击的尾巴团 · 简体中文汉化工程
 
-平台：**Game Boy Advance（GBA）**。本仓库为私密交付仓库，只保存汉化补丁、使用说明、字体许可与验证摘要，不含原版／汉化 ROM、存档、上游源码或本机配置。
+**Game Boy Advance / GBA · 日版 A9KJ · 公开的可复现开发工程**
 
-## 汉化范围
+这个仓库不只是补丁下载页：它保存中文译文、字形 ID、字体、补丁生成源码、图形资源处理器、逆向记录和贡献流程。你可以用自己合法持有的原版 ROM **原样重建 v20**，也可以改译文后生成新的开发版。
 
-按用户“大部分汉化即可，然后进行交付”的要求收尾，不是100%汉化或全通关认证版。
+> **状态说明**：已发布 v20 是“大部分汉化”交付版，不是全汉化／全通关认证版。标题与一些图形日文尚未完成。`ui-candidate` 是可复现的后续菜单修复实验，不能当正式版。项目只涉及 **GBA 一代**，不是 GBC，也不是 NDS 二代。
 
-- 大部分剧情对白与系统正文、中文起名／姓名、操作教学。
+## 按你的目的选择入口
+
+| 你想做什么 | 从哪里开始 |
+|---|---|
+| 直接使用现有汉化 | [v20 Release](https://github.com/cuicuicuicui1/genki-slime-cn/releases/tag/v20) / [补丁使用](#只想玩现有-v20) |
+| 从源码重建 v20 | [构建指南](docs/building.md) |
+| 精修译文／换成其他语言 | [译文编辑指南](docs/translation-format.md) |
+| 理解字库、字码、窗口、指针破解 | [文本与引擎逆向](docs/reverse-engineering.md) |
+| 修改标题、菜单、HUD 等图形字 | [图形与调试](docs/graphics-and-debugging.md) / [资源台账](docs/resource-index.md) |
+| 理解哪些测试真的做过 | [验证边界](docs/verification.md) |
+| 报乱码／提交修改 | [贡献指南](CONTRIBUTING.md) / Issues |
+
+## 开发者快速开始
+
+需要 **Python 3.12、Git**。工程验证环境为 Python 3.12.10；使用虚拟环境，不必安装全局工具。Windows PowerShell：
+
+```powershell
+git clone https://github.com/cuicuicuicui1/genki-slime-cn.git
+cd genki-slime-cn
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -X utf8 tools/project.py bootstrap
+.\.venv\Scripts\python.exe -X utf8 tools/project.py build --rom "你的原版.gba" --out "outputs/v20-rebuilt"
+```
+
+macOS／Linux 使用 `.venv/bin/python` 替代上述 Python 路径。`bootstrap` 只拉取固定提交的上游工具，**不下载 ROM、BIOS、存档或模拟器**。
+
+- 原文、指针清单从你提供的 ROM 逐字节抽取，完整日文转储不在 Git 中。
+- 译文全部来自 `data/`，不需要作者的历史工作目录、旧 ROM 或旧 manifest。
+- 所有构建都写到新的 `--out` 目录；拒绝覆盖已有目录及原版。
+- 默认构建必须得到 v20 的固定 SHA256；改稿请用 `--translations`，详见构建指南。
+- 字库、姓名、菜单、状态卡均从源码重建；不是偷偷把现成汉化 ROM 当作构建基座。
+
+## 工程目录
+
+```text
+assets/fonts/       实际用到的 16／12／8px BDF 与字体许可
+data/               已审译文、辅助名称、术语、ID 注册表、复核摘要
+  review-overrides.json      2426 条已审作者记录（控制序列仍保留）
+  auxiliary-translations.json 113 条辅助输入（不冒称全部精翻通过）
+  gba-font-ids.json           1878 个持久姓名字形 ID，只追加
+  gba-review-ledger.json     逐记录复核摘要与 token digest
+tools/              字码、字库、ARM Thumb 注入、BG／OBJ、BPS、便携入口
+docs/               构建、译文、逆向、图形、验证与资源导航
+research/           标题 31 模板及资源消费者等结构化发现（不含图集二进制）
+tests/              不依赖游戏 ROM 的工程测试
+.github/            ROM-free CI、问题模板
+```
+
+`upstream/`、`outputs/`、`local-input/`、`.venv/` 是本地生成／输入目录，已忽略。禁止把 ROM、存档、BIOS、解压图集、个人配置或密钥提交到仓库。
+
+## 现有汉化与剩余范围
+
+v20 已涵盖：
+
+- 大部分剧情对白、系统正文、中文起名与姓名、操作教学。
 - 冒险之书标题及部分删除／睡眠说明。
-- 主要城镇、获救名单、搬运记录菜单及地区标题。
-- 完整居民姓名、“阅读”“尚未交谈”等提示。
+- 主要城镇、救出名单、搬运记录菜单、地区标题。
+- 完整居民姓名和“阅读”“尚未交谈”等状态提示。
 - 诺克森林／诺克之井／乌鲁奥塔河译名统一。
-- 多数正文原生16像素点阵字；姓名与部分小窗使用12像素；部分保存姓名仍有8像素限制。
 
-已写入2528条编码记录，2341条源对白、85条短标签已逐源复核。计数包含重复与特殊记录，不等于游玩场景数或汉化百分比。
+2528 条编码记录写入 ROM；其中 2341 条源对白与 85 条短标签有逐源复核。计数包括重复和特殊记录，**不是场景数，也不是汉化百分比**。多数正文原生 16px，姓名与小窗 12px，通用保存姓名仍有 8px 限制。
 
-标题及部分图形文字仍为日文。未完成自然全通关、晚期全流程或跨版本电池存档兼容认证。详见 [KNOWN-ISSUES.md](KNOWN-ISSUES.md)。建议备份存档并从新游戏开始。
+标题 Logo／动画、部分保存／复制图形、HUD／地图／小游戏仍需后续工作。新发现的文件菜单计时字形冲突和是／否布局问题已形成源码候选；正式 v20 补丁保持不变，见 [已知问题](KNOWN-ISSUES.md)。
 
-## 使用补丁
+## 只想玩现有 v20
 
-自行准备合法持有的未修改8MiB日版 A9KJ 原件。不要在旧汉化 ROM 上重复打补丁。
-
-用 Flips 选择 `genki-slime-cn.bps` 与原日版，输出新文件；或使用 Python 3：
+自己准备合法持有的未修改 **8MiB 日版原件**，在原版上应用 `genki-slime-cn.bps`。不要对旧汉化重复打补丁。
 
 ```sh
 python apply_bps.py "原日版.gba" genki-slime-cn.bps "元气史莱姆1-简中-v20.gba"
 ```
 
-脚本核对源、补丁、目标SHA256并拒绝覆盖已有文件。生成后的 `.gba` 使用支持GBA的模拟器打开；本机已使用BizHawk的mGBA核心启动到标题画面。Snes9x不是本作的平台入口。
+也可使用 Flips。生成的 `.gba` 用支持 GBA 的模拟器启动；Snes9x 不是本作的平台入口。脚本核对源、补丁、目标 SHA256 并拒绝覆盖已有文件。
 
-| 文件 | SHA256 |
+| 对象 | SHA256 |
 |---|---|
-| 原日版（8MiB，不含于仓库） | `a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2` |
-| 目标v20（16MiB，不含于仓库） | `b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0` |
-| BPS补丁 | `a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c` |
+| 原日版（8MiB，仓库不含） | `a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2` |
+| 发布 v20（16MiB，仓库不含） | `b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0` |
+| 已发布 BPS | `a62326c7f8af4a377d3669aa8685d9a03f0aae48b4cc581f5daf5fe78f262c0c` |
 
-## 验证边界
+自己构建的 BPS metadata 与已发布补丁可能不同，所以 BPS 文件 SHA 不必相同；**重建目标 ROM 的 SHA 必须相同**。修改译文后的开发版不能继承正式版测试结论。
 
-本仓库BPS与本地已验证v20交付补丁逐字节相同。独立Python／Flips回放、错源／损坏／截断／拒覆盖测试通过；交付时全新7000帧早期冷启动47对画面核对相同。另有226项GBA单元检查、部分状态卡与城镇界面受控检查。受控名单测试不等于自然救出100名居民或完整通关。见 [VERIFICATION-SUMMARY.json](VERIFICATION-SUMMARY.json) 与 [DELIVERY-STATUS.json](DELIVERY-STATUS.json)。
+## 验证、贡献与权利
 
-这里只上传去除本机路径的交付摘要，不上传原始工作目录、ROM、存档或含本机信息的日志。GitHub下载包与本地旧包的说明内容不同，但BPS和目标ROM指纹相同。
+已发布版有独立 Python／Flips 回放、失败输入检查和 7000 帧早期冷启动记录。受控城镇／居民测试不等于自然救出全部居民；没有自然全通关、全部晚期／联机或跨版电池存档认证。先备份存档，调试使用隔离目录。
 
-## 致谢与许可
+欢迎提交精翻、图形消费者追踪、复现步骤和可审计的小范围 PR。不要只上传新 ROM 或含糊的“全汉化”补丁；请说明来源、修改位置、截图／测试和未覆盖场景。
 
-参考SuperDisk／Translimeation的逆向与抽取资料，保留其劳动来源；本仓库不再分发许可未确认的上游源码。社区资料用于译名参考，不冒称官方中文定名。
+参考 SuperDisk／Translimeation，固定上游提交 `027ba3d7810cec3d5d634cb27402b32bf1a0e6d7`。未确认其根许可，因此上游源码不再分发，仅由 `bootstrap` 拉取。字体来自 GNU Unifont 16.0.03 与 Fusion Pixel；保留字体署名及许可。字体许可不覆盖游戏、译文或整个工程。详见 [权利与来源](COPYING.md)。
 
-字形使用GNU Unifont 16.0.03（选择SIL OFL）与TakWolf及贡献者的Fusion Pixel 12／8。见 `FONT-NOTICES.md`、`OFL-Unifont.txt` 和 `OFL.txt`。字体许可不代表游戏ROM或其他资产许可；不对整仓库冒用字体许可。
-
-交付日期：2026年10月8日。剩余全汉化不自动继续。
+维护状态更新：2026-10-08。新图形汉化正在开发，本次工程整理不把未完成部分伪装为完成。

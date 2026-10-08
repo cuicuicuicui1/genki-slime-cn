@@ -1,0 +1,11 @@
+{
+  "upstream": {
+    "url": "https://github.com/SuperDisk/Translimeation.git",
+    "commit": "027ba3d7810cec3d5d634cb27402b32bf1a0e6d7",
+    "license_status": "No root license found at pinned commit; fetched by user, not vendored here"
+  },
+  "tested_python": "3.12.10",
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "v20_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "bare_v20_sha256": "5c8b3f618905383180416aeb32266501fae0f492e5b4980e5fcb367a6e6bfdd3"
+}

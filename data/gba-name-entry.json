@@ -1,0 +1,20 @@
+{
+  "default": "史拉林",
+  "cn_rows": [
+    "史拉林勇元气小大王龙",
+    "云天星月日光风雨雪火",
+    "水土金木山海川田森石",
+    "阿安乐明宏文武杰俊英",
+    "华丽美兰莉娜莲玲露香",
+    "红蓝绿白黑青紫银玉心",
+    "一二三四五六七八九十",
+    "子宁飞宇翔晨阳晓春秋",
+    "冬夏雪晴雨梦希望欢笑",
+    "宝贝甜亮圆萌丸团球星",
+    "平和福寿泰康灵精神圣",
+    "东南西北前后左右中全"
+  ],
+  "latin_page": "original-last-60-cells",
+  "save_format": "unchanged four u16 main-font glyph IDs; stable registry required",
+  "legacy_kana_and_reserved_names": "retained and bounded; CN default comparison patched"
+}

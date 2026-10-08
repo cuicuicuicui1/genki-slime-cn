@@ -1,0 +1,16 @@
+{
+  "main_px": 16,
+  "main_font": "GNU Unifont 16.0.03",
+  "main_bdf": "assets/fonts/unifont16/unifont-16.0.03.bdf",
+  "main_shadow": false,
+  "small_px": 8,
+  "small_font": "Fusion Pixel 8px",
+  "reason": "User requested clear native Chinese. Main16/speaker12 remain native unshadowed; compact12 and fixed8 saved-name/list Chinese banks now remove one-pixel shadow without widening caller allocation or reassigning saved glyph IDs.",
+  "small_shadow": false,
+  "compact_shadow": false,
+  "compact_px": 12,
+  "compact_font": "Fusion Pixel 12px",
+  "name_grid_ink": 119,
+  "name_grid_background": 113,
+  "name_grid_color_reason": "Original green119 provides darker native strokes than white116 over original bright-green113; no palette mutation. Only Chinese grid letter pixels change, Latin and nonletter art unchanged."
+}

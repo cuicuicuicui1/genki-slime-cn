@@ -1,0 +1,24 @@
+{
+  "plain-713F35": {
+    "profile": "pot-crush-record-popup-native12-v1",
+    "source_hex": "1d8178c087a4677024021d1de8449998d298ad021d1d7a49b2d1a71700",
+    "source_literal": 810500,
+    "source_offset": 7421749,
+    "destination_literal": 810496,
+    "destination": 100704256,
+    "consumer_start": 810146,
+    "consumer_end": 810304,
+    "consumer_sha256": "c1407da4ec2ec0f082fb27af43e3d63d0c33ce1b482f8cd663ee4ad10c622469",
+    "field_end_pixels": [
+      88,
+      184,
+      264
+    ],
+    "tile_count": 66,
+    "font": "compact12",
+    "padding_glyph": "　",
+    "padding_stock_code": 29,
+    "plain_advance_rule": "every glyph width+1; ALIGN rounds up to next 8px column, not newline",
+    "evidence": "evidence/gba-v13-fixed-popup-renderer.json"
+  }
+}

@@ -24,3 +24,13 @@ inputs/
 upstream/
 work/
 releases/
+
+.venv/
+venv/
+local-input/
+outputs/
+*.log
+*.dll
+*.so
+*.dylib
+.pytest_cache/

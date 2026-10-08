@@ -1,0 +1,39 @@
+{
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "scope": "Unicode semantic display corrections established against source ROM main-font pixels, not byte-format changes. Upstream tbl/inventory are preserved for roundtrip reproducibility. Parent interprets these glyphs correctly; future worker inputs must carry this view.",
+  "evidence": "work/gba-graphics-v03/source-kanji-census.png",
+  "main_font": {
+    "0x114": {
+      "table": "玉",
+      "actual": "王"
+    },
+    "0x155": {
+      "table": "対",
+      "actual": "体"
+    },
+    "0x173": {
+      "table": "坂",
+      "actual": "板"
+    },
+    "0x19B": {
+      "table": "海",
+      "actual": "毎"
+    },
+    "0x130": {
+      "table": "六",
+      "actual": "穴",
+      "additional_evidence": "research/community/gba-v04/source-hole-glyph.png"
+    },
+    "0x1B6": {
+      "table": "探",
+      "actual": "深",
+      "additional_evidence": "research/community/gba-v04/source-night-glyph.png",
+      "source_glyph_rom_offset": "0x73CE4C",
+      "source_glyph_dimensions": [
+        13,
+        16
+      ]
+    }
+  },
+  "context_note": "カ and 力 have a visually similar glyph; 力いっぱい is resolved semantically in context, not globally replace all カ."
+}

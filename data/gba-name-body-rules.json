@@ -1,0 +1,102 @@
+{
+  "scope": "Parent source-guarded body mentions; not unguarded global digit/word substitutions",
+  "rules": [
+    {
+      "source_contains": "スラーリン８世",
+      "candidate_regex": "(?:史拉林|史莱林|斯拉林)(?:(?:八|[8８])世){0,3}",
+      "replacement": "史拉林八世",
+      "reason": "NAME canon includes 八世 but Japanese body explicitly appends ８世; consume aliases and ordinal as one surface, never duplicate suffix."
+    },
+    {
+      "source_contains": "ギガンテス",
+      "candidate_regex": "巨人怪",
+      "replacement": "癸干忒斯",
+      "reason": "Captured DQ Wiki language table Japaneseギガンテス / 简体中文癸干忒斯; cross-series community evidence, not original GBA official Chinese."
+    },
+    {
+      "source_contains": "まもの",
+      "candidate_regex": "魔兽",
+      "replacement": "魔物",
+      "reason": "魔物 is literal source/category term; avoid Warcraft-like unqualified 魔兽. Generic project term decision not official-name claim."
+    },
+    {
+      "source_contains": "ほこら",
+      "candidate_regex": "石龛",
+      "replacement": "祠堂",
+      "reason": "Original source permits going inside the shrine. 石龛 is niche; choose enterable祠堂 as project rendering."
+    },
+    {
+      "source_contains": "へきがのかけら",
+      "candidate_regex": "辟邪碎片|碧珈碎片",
+      "replacement": "壁画碎片",
+      "reason": "へきが is 壁画, not 辟邪(へきじゃ); original game holds physical mural fragments."
+    },
+    {
+      "source_contains": "ミオ・ロシタル",
+      "candidate_regex": "米奥·罗西塔尔",
+      "replacement": "米欧·罗西塔尔",
+      "reason": "Existing dominant project place-name spelling, not generic vertigo; frozen source contains floating island fortress explanation."
+    },
+    {
+      "source_contains": "二丁目",
+      "candidate_regex": "二丁目",
+      "replacement": "二区",
+      "reason": "Parent unit02 chosen numbered town districts for readable Chinese; source numeral preserved."
+    },
+    {
+      "source_contains": "三丁目",
+      "candidate_regex": "三丁目",
+      "replacement": "三区",
+      "reason": "Numbered town district, source numeral3 preserved."
+    },
+    {
+      "source_contains": "スラレンジャー",
+      "candidate_regex": "史拉战队",
+      "replacement": "史莱姆战队",
+      "reason": "Existing canonical NAME/body reference denotes the same slime ranger play."
+    },
+    {
+      "source_contains": "うみの家",
+      "candidate_regex": "海滨小店",
+      "replacement": "海之家",
+      "reason": "Use existing dominant project facility surface consistently across invitation/location/name. Descriptive beach shop remains understandability note, not separate facility."
+    },
+    {
+      "source_contains": "ウズ",
+      "candidate_regex": "乌兹",
+      "replacement": "漩涡",
+      "reason": "All seven original-source uses refer to water vortex transport/soaking/being caught; not a character. FFsky search snippet corroborates sea旋涡通道; full page fetch timed out (unit04-online-context.json), not retrieved full-text evidence or official-name proof."
+    },
+    {
+      "source_contains": "オババ",
+      "candidate_regex": "欧巴巴阿姨",
+      "replacement": "欧巴巴婆婆",
+      "reason": "Original source describes elderly ハっスルばーさん, not middle-aged aunt. 欧巴巴 remains project proper-name spelling."
+    },
+    {
+      "source_contains": "テキ屋",
+      "candidate_regex": "(?:庙会摊位|杂耍摊|摊贩)",
+      "replacement": "敌屋",
+      "reason": "Source names a combat facility. Captured dqdic3rdテキや specifically says敵屋, not festival vendor; source11 contexts confirm battle/monsters/threewells. Scope term only, not full-record semantic approval."
+    },
+    {
+      "source_contains": "カラカラ水源",
+      "candidate_regex": "(?:喀卡拉|喀喀拉|卡拉拉)水源",
+      "replacement": "卡拉卡拉水源",
+      "reason": "Normalize source four-moraカラカラ place spelling; project choice, no official CN claim."
+    },
+    {
+      "source_contains": "スーラン",
+      "candidate_regex": "史乌拉",
+      "replacement": "史兰",
+      "exclude_person_mentions": [
+        "スーラ"
+      ],
+      "reason": "Source longest-match townスーラン vs NPCスーラ. Only restore mistaken NPC alias in town-only string slot; same-slot co-mention not guessed.",
+      "evidence": "research/community/gba-v09/town-name-guard.json"
+    }
+  ],
+  "protected_non_person_entities": {
+    "スーラン": "史兰"
+  }
+}
