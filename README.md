@@ -2,6 +2,8 @@
 
 **Game Boy Advance / GBA · 日版 A9KJ · 公开的可复现开发工程**
 
+[![ROM-free CI](https://github.com/cuicuicuicui1/genki-slime-cn/actions/workflows/rom-free-tests.yml/badge.svg)](https://github.com/cuicuicuicui1/genki-slime-cn/actions/workflows/rom-free-tests.yml)
+
 这个仓库不只是补丁下载页：它保存中文译文、字形 ID、字体、补丁生成源码、图形资源处理器、逆向记录和贡献流程。你可以用自己合法持有的原版 ROM **原样重建 v20**，也可以改译文后生成新的开发版。
 
 > **状态说明**：已发布 v20 是“大部分汉化”交付版，不是全汉化／全通关认证版。标题与一些图形日文尚未完成。`ui-candidate` 是可复现的后续菜单修复实验，不能当正式版。项目只涉及 **GBA 一代**，不是 GBC，也不是 NDS 二代。
@@ -56,6 +58,15 @@ tests/              不依赖游戏 ROM 的工程测试
 ```
 
 `upstream/`、`outputs/`、`local-input/`、`.venv/` 是本地生成／输入目录，已忽略。禁止把 ROM、存档、BIOS、解压图集、个人配置或密钥提交到仓库。
+
+## 已验证工程可用性
+
+- 干净Git克隆、独立虚拟环境、固定上游依赖，从原版完整重建的目标与v20逐字节一致。
+- 修改既有译文能生成新的开发版；新增字形测试保留全部1878旧ID、只追加1字，并完成实际编码读回。
+- 31项ROM-free测试在GitHub Windows／Ubuntu通过。可选原生源码审计／字形／起名消费者检查通过。
+- 重建ROM用隔离mGBA HLE冷启动7000帧，47对早期画面与原v20记录完全相同；不读取用户存档。
+
+证据见 [engineering-portability.json](evidence/engineering-portability.json)。这些验证不覆盖全通关，也不给改稿或UI候选继承运行认证。
 
 ## 现有汉化与剩余范围
 

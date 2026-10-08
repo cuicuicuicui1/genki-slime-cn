@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "cpu_model": "Unicorn TI925T ARMv4T instruction model; fixture DMA, not full GBA timing",
+  "rom_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "checks": {
+    "default_with_guards": 1,
+    "grids": 230,
+    "comparison": 17,
+    "legacy_small_full": 924,
+    "cjk_small_with_guards": 468,
+    "invalid_or_empty_bounded": 3,
+    "input_banner_pixels": 768
+  },
+  "total": 2411,
+  "scope": "Actual ROM Thumb consumers, original centering and fixture DMA; not full save/playthrough evidence"
+}

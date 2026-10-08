@@ -1,0 +1,20 @@
+{
+  "rom_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "status": "pass",
+  "cpu_model": "Unicorn TI925T ARMv4T instruction model; fixture DMA, not full GBA timing",
+  "stock_advance_checks": 1275,
+  "cn_pixel_checks": 30048,
+  "reader_checks": 7512,
+  "ui_checks": 8,
+  "small_checks": 1878,
+  "speaker_checks": 185,
+  "speaker_vram_byte_duplication_model": true,
+  "ticker_checks": 7,
+  "credit_copy_checks": 59,
+  "not_proven": [
+    "whole-game emulation",
+    "hardware",
+    "natural scene reachability",
+    "human review of every glyph"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+  "target_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+  "source_inventory_records": 2561,
+  "draft_denominator": 2539,
+  "injected": 2528,
+  "reference_proven_records": 2506,
+  "source_controls_validated": 2539,
+  "final_readback_records": 2528,
+  "reviewed_records": 2426,
+  "reviewed_dialogue": 2341,
+  "reviewed_plain_labels": 85,
+  "layout_font_counts": {
+    "('plain', 'compact12')": 85,
+    "('dialogue', 'clear16')": 2311,
+    "('dialogue', 'compact12')": 30,
+    "('small', 'small8')": 102
+  },
+  "stable_primary_glyphs": 1878,
+  "unchanged_original_header_and_font_bitmaps": true,
+  "exact_declared_diff_only": true,
+  "name_identity_audit": {
+    "identity_groups": 170,
+    "conflict_groups": {},
+    "scope": "exact original NAME identities; not official Chinese-name certification"
+  },
+  "parent_review_ledger_exact_hashes": 2426,
+  "speaker_label_font": {
+    "bitmap": 8868304,
+    "glyph_stride": 128,
+    "native_px": 12,
+    "advance_cn": 12,
+    "advance_legacy": 8,
+    "max_pixels": 96,
+    "reserved_bank_bytes": 768,
+    "background_palette_index": 1,
+    "shadow": false,
+    "vram_write_contract": "aligned halfword RMW, never byte stores (GBA VRAM duplicates byte writes)",
+    "entry_hook": 615808,
+    "stub": 143326416,
+    "scope": "NAME speaker bars only; original 8px saved-name/list consumers remain separate"
+  },
+  "scope_limit": "Format/readback/consistency checks do not prove complete precision translation or all windows/scenes."
+}

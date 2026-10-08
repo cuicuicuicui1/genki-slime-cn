@@ -1,0 +1,106 @@
+{
+  "schema": "public-engineering-portability-verification-v1",
+  "date": "2026-10-08",
+  "repository": "cuicuicuicui1/genki-slime-cn",
+  "tested_commit": "dbef7ac22a85544d0e51cf71dded67239794010e",
+  "clean_git_checkout": true,
+  "fresh_venv_installed_pinned_requirements": true,
+  "only_local_ROM_input_and_fetched_pinned_upstream_required": true,
+  "no_old_ROM_or_manifest_inputs": true,
+  "ROM_free_tests": {
+    "count": 31,
+    "status": "pass"
+  },
+  "full_source_rebuild": {
+    "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+    "target_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+    "patch_sha256": "a21f9c99a6031fd8c4c88570454e1885fe3db4f5c364db2a8fa74833a8081b52",
+    "profile": "v20",
+    "exact_v20": true,
+    "modified_authoring": false,
+    "upstream_commit": "027ba3d7810cec3d5d634cb27402b32bf1a0e6d7",
+    "validation": "structural build gates + final encoded readback + BPS replay; NOT natural playthrough"
+  },
+  "native_source_checks": {
+    "target_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+    "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+    "scripts": [
+      {
+        "script": "audit_gba.py",
+        "exit_code": 0
+      },
+      {
+        "script": "test_engine.py",
+        "exit_code": 0
+      },
+      {
+        "script": "test_gba_name.py",
+        "exit_code": 0
+      }
+    ],
+    "scope": "exact author-token digests/readback/static write bounds + ARMv4T dialogue/plain/small/name consumers; controlled tests only, no natural playthrough"
+  },
+  "fresh_HLE_smoke": {
+    "name": "mGBA",
+    "version": "0.11-212-7a12d6d",
+    "core_sha256": "384bb3ff0b88ff8b1a322f152e1f5932afc13d1f43f62e45463c8267753dde9f",
+    "rom_sha256": "b658e3bea80ce1deb024298583d5743332bdbb5101109bcdf0d1404501c9bde0",
+    "frames": 7000,
+    "seconds": 9.588745355606079,
+    "bios": "HLE; no external BIOS",
+    "RAM_writes": false,
+    "save_loaded": false,
+    "scope": "early deterministic natural-input route; NOT full playthrough or save compatibility"
+  },
+  "same_SHA_natural_capture_pairs_exact": 47,
+  "ordinary_edited_record_build": {
+    "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+    "target_sha256": "d03c730c483ae3e992159811e243c08838d7d9458c115de0ca9b9257de107098",
+    "patch_sha256": "73359ac83674428eda9923832ba94a4b3c97b84eb6da8306c750c8c4d87f543e",
+    "profile": "v20",
+    "exact_v20": false,
+    "modified_authoring": true,
+    "upstream_commit": "027ba3d7810cec3d5d634cb27402b32bf1a0e6d7",
+    "validation": "structural build gates + final encoded readback + BPS replay; NOT natural playthrough"
+  },
+  "new_character_build": {
+    "report": {
+      "source_sha256": "a4f8d475eb877bc370cead79876caf7418864b1497d237650ff738c3afdf27a2",
+      "target_sha256": "d0a73e98bc87f4800a798fd02cecd9d0d8b7de2b7a0df058a95ee97854baea66",
+      "patch_sha256": "0fbd42674193887d445bc380e2feda3da50e29a8c502e28c5a7a22bb2f0c182d",
+      "profile": "v20",
+      "exact_v20": false,
+      "modified_authoring": true,
+      "upstream_commit": "027ba3d7810cec3d5d634cb27402b32bf1a0e6d7",
+      "validation": "structural build gates + final encoded readback + BPS replay; NOT natural playthrough"
+    },
+    "new_character": "龘",
+    "original_IDs_preserved": true,
+    "old_ID_count": 1878,
+    "new_ID_count": 1879,
+    "compiled_record_readback_exact": true,
+    "not_runtime_certified": true
+  },
+  "UI_candidate": {
+    "target_sha256": "4a98c5415d85c69b8148ad78d858e61b0642bc85a54319c64608786e26967730",
+    "matches_prior_local_candidate": true,
+    "published_as_release": false
+  },
+  "remote_CI": {
+    "run_id": 37778875950,
+    "head_commit": "dbef7ac22a85544d0e51cf71dded67239794010e",
+    "windows": "success",
+    "ubuntu": "success",
+    "ROM_provided_to_CI": false
+  },
+  "original_source_and_old_delivery_and_active_v15_preserved": true,
+  "old_v20_release_asset_sha256": "ec66626c9f61eb3987b1b6c046de31629555f88f866c8ac5482e1b96b1513b44",
+  "not_proven": [
+    "full-game localization",
+    "full playthrough",
+    "all late-game or link modes",
+    "cross-version battery-save compatibility",
+    "all graphics translated",
+    "runtime certification of modified translation or UI candidate"
+  ]
+}
